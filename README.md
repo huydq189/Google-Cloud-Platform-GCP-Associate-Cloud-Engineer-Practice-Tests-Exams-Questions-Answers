@@ -353,7 +353,7 @@ We are so thankful for every contribution, which makes sure we can deliver top-n
 ### You want to run a single caching HTTP reverse proxy on GCP for a latency-sensitive website. This specific reverse proxy consumes almost no CPU. You want to have a 30-GB in-memory cache, and need an additional 2 GB of memory for the rest of the processes. You want to minimize cost. How should you run this reverse proxy?
 
 - [ ] Create a Cloud Memorystore for Redis instance with 32-GB capacity.
-- [ ] Run it on Compute Engine, and choose a custom instance type with 6 vCPUs and 32 GB of memory.
+- [x] Run it on Compute Engine, and choose a custom instance type with 6 vCPUs and 32 GB of memory.
 - [ ] Package it in a container image, and run it on Kubernetes Engine, using n1-standard-32 instances as nodes.
 - [ ] Run it on Compute Engine, choose the instance type n1-standard-1, and add an SSD persistent disk of 32 GB.
 
@@ -362,7 +362,7 @@ We are so thankful for every contribution, which makes sure we can deliver top-n
 ### You have a single binary application that you want to run on Google Cloud Platform. You decided to automatically scale the application based on underlying infrastructure CPU usage. Your organizational policies require you to use Virtual Machines directly. You need to ensure that the application scaling is operationally efficient and completed as quickly as possible. What should you do?
 
 - [ ] Create a Google Kubernetes Engine cluster, and use horizontal pod autoscaling to scale the application.
-- [ ] Create an instance template, and use the template in a Managed Instance Group with autoscaling configured.
+- [x] Create an instance template, and use the template in a Managed Instance Group with autoscaling configured.
 - [ ] Create an instance template, and use the template in a Managed Instance Group that scales up and down based on the time of day.
 - [ ] Use a set of third-party tools to build automation around scaling the application up and down, based on Stackdriver CPU usage monitoring.
 
@@ -372,14 +372,14 @@ We are so thankful for every contribution, which makes sure we can deliver top-n
 
 - [ ] Create a service account with an access scope. Use the access scope 'https://www.googleapis.com/auth/devstorage.write_only'.
 - [ ] Create a service account with an access scope. Use the access scope 'https://www.googleapis.com/auth/cloud-platform'.
-- [ ] Create a service account and add it to the IAM role 'storage.objectCreator' for that bucket.
+- [x] Create a service account and add it to the IAM role 'storage.objectCreator' for that bucket.
 - [ ] Create a service account and add it to the IAM role 'storage.objectAdmin' for that bucket.
 
 **[⬆ Back to Top](#table-of-contents)**
 
 ### You have an object in a Cloud Storage bucket that you want to share with an external company. The object contains sensitive data. You want access to the content to be removed after four hours. The external company does not have a Google account to which you can grant specific user-based access privileges. You want to use the most secure method that requires the fewest steps. What should you do?
 
-- [ ] Create a signed URL with a four-hour expiration and share the URL with the company.
+- [x] Create a signed URL with a four-hour expiration and share the URL with the company.
 - [ ] Set object access to 'public' and use object lifecycle management to remove the object after four hours.
 - [ ] Configure the storage bucket as a static website and furnish the object's URL to the company. Delete the object from the storage bucket after four hours.
 - [ ] Create a new Cloud Storage bucket specifically for the external company to access. Copy the object to that bucket. Delete the bucket after four hours have passed.
@@ -388,7 +388,7 @@ We are so thankful for every contribution, which makes sure we can deliver top-n
 
 ### You need to create an autoscaling Managed Instance Group for an HTTPS web application. You want to make sure that unhealthy VMs are recreated. What should you do?
 
-- [ ] Create a health check on port 443 and use that when creating the Managed Instance Group.
+- [x] Create a health check on port 443 and use that when creating the Managed Instance Group.
 - [ ] Select Multi-Zone instead of Single-Zone when creating the Managed Instance Group.
 - [ ] In the Instance Template, add the label 'health-check'.
 - [ ] In the Instance Template, add a startup script that sends a heartbeat to the metadata server.
@@ -397,7 +397,7 @@ We are so thankful for every contribution, which makes sure we can deliver top-n
 
 ### You are deploying an application to a Compute Engine VM in a Managed Instance Group. The application must be running at all times, but only a single instance of the VM should run per GCP project. How should you configure the instance group?
 
-- [ ] Set autoscaling to On, set the minimum number of instances to 1, and then set the maximum number of instances to 1.
+- [x] Set autoscaling to On, set the minimum number of instances to 1, and then set the maximum number of instances to 1.
 - [ ] Set autoscaling to Off, set the minimum number of instances to 1, and then set the maximum number of instances to 1.
 - [ ] Set autoscaling to On, set the minimum number of instances to 1, and then set the maximum number of instances to 2.
 - [ ] Set autoscaling to Off, set the minimum number of instances to 1, and then set the maximum number of instances to 2.
@@ -407,7 +407,7 @@ We are so thankful for every contribution, which makes sure we can deliver top-n
 ### You have production and test workloads that you want to deploy on Compute Engine. Production VMs need to be in a different subnet than the test VMs. All the VMs must be able to reach each other over internal IP without creating additional routes. You need to set up VPC and the 2 subnets. Which configuration meets these requirements?
 
 - [ ] Create a single custom VPC with 2 subnets. Create each subnet in a different region and with a different CIDR range.
-- [ ] Create a single custom VPC with 2 subnets. Create each subnet in the same region and with the same CIDR range.
+- [x] Create a single custom VPC with 2 subnets. Create each subnet in the same region and with the same CIDR range.
 - [ ] Create 2 custom VPCs, each with a single subnet. Create each subnet is a different region and with a different CIDR range.
 - [ ] Create 2 custom VPCs, each with a single subnet. Create each subnet in the same region and with the same CIDR range.
 
@@ -415,7 +415,7 @@ We are so thankful for every contribution, which makes sure we can deliver top-n
 
 ### You have an instance group that you want to load balance. You want the load balancer to terminate the client SSL session. The instance group is used to serve a public web application over HTTPS. You want to follow Google-recommended practices. What should you do?
 
-- [ ] Configure an HTTP(S) load balancer.
+- [x] Configure an HTTP(S) load balancer.
 - [ ] Configure an internal TCP load balancer.
 - [ ] Configure an external SSL proxy load balancer.
 - [ ] Configure an external TCP proxy load balancer.
@@ -425,7 +425,7 @@ We are so thankful for every contribution, which makes sure we can deliver top-n
 ### You have a web application deployed as a Managed Instance Group. You have a new version of the application to gradually deploy. Your web application is currently receiving live web traffic. You want to ensure that the available capacity does not decrease during the deployment. What should you do?
 
 - [ ] Perform a rolling-action start-update with maxSurge set to 0 and maxUnavailable set to 1.
-- [ ] Perform a rolling-action start-update with maxSurge set to 1 and maxUnavailable set to 0.
+- [x] Perform a rolling-action start-update with maxSurge set to 1 and maxUnavailable set to 0.
 - [ ] Create a new Managed Instance Group with an updated instance template. Add the group to the backend service for the load balancer. When all instances in the new Managed Instance Group are healthy, delete the old Managed Instance Group.
 - [ ] Create a new instance template with the new application version. Update the existing Managed Instance Group with the new instance template. Delete the instances in the Managed Instance Group to allow the Managed Instance Group to recreate the instance using the new instance template.
 
@@ -434,7 +434,7 @@ We are so thankful for every contribution, which makes sure we can deliver top-n
 ### You need to grant access for three users so that they can view and edit table data on a Cloud Spanner instance. What should you do?
 
 - [ ] Run gcloud iam roles describe roles/spanner.databaseUser. Add the users to the role.
-- [ ] Run gcloud iam roles describe roles/spanner.databaseUser. Add the users to a new group. Add the group to the role.
+- [x] Run gcloud iam roles describe roles/spanner.databaseUser. Add the users to a new group. Add the group to the role.
 - [ ] Run gcloud iam roles describe roles/spanner.viewer –project my-project. Add the users to the role.
 - [ ] Run gcloud iam roles describe roles/spanner.viewer –project my-project. Add the users to a new group. Add the group to the role.
 
@@ -443,7 +443,7 @@ We are so thankful for every contribution, which makes sure we can deliver top-n
 ### You need to create a new billing account and then link it with an existing Google Cloud Platform project. What should you do?
 
 - [ ] Verify that you are Project Billing Manager for the GCP project. Update the existing project to link it to the existing billing account.
-- [ ] Verify that you are Project Billing Manager for the GCP project. Create a new billing account and link the new billing account to the existing project.
+- [x] Verify that you are Project Billing Manager for the GCP project. Create a new billing account and link the new billing account to the existing project.
 - [ ] Verify that you are Billing Administrator for the billing account. Create a new project and link the new project to the existing billing account.
 - [ ] Verify that you are Billing Administrator for the billing account. Update the existing project to link it to the existing billing account.
 
@@ -451,7 +451,7 @@ We are so thankful for every contribution, which makes sure we can deliver top-n
 
 ### You have sensitive data stored in three Cloud Storage buckets and have enabled data access logging. You want to verify activities for a particular user for these buckets, using the fewest possible steps. You need to verify the addition of metadata labels and which files have been viewed from those buckets. What should you do?
 
-- [ ] Using the GCP Console, filter the Activity log to view the information.
+- [x] Using the GCP Console, filter the Activity log to view the information.
 - [ ] Using the GCP Console, filter the Stackdriver log to view the information.
 - [ ] View the bucket in the Storage section of the GCP Console.
 - [ ] Create a trace in Stackdriver to view the information.
@@ -461,7 +461,7 @@ We are so thankful for every contribution, which makes sure we can deliver top-n
 ### You need to run an important query in BigQuery but expect it to return a lot of records. You want to find out how much it will cost to run the query. You are using on-demand pricing. What should you do?
 
 - [ ] Arrange to switch to Flat-Rate pricing for this query, then move back to on-demand.
-- [ ] Use the command line to run a dry run query to estimate the number of bytes read. Then convert that bytes estimate to dollars using the Pricing Calculator.
+- [x] Use the command line to run a dry run query to estimate the number of bytes read. Then convert that bytes estimate to dollars using the Pricing Calculator.
 - [ ] Use the command line to run a dry run query to estimate the number of bytes returned. Then convert that bytes estimate to dollars using the Pricing Calculator.
 - [ ] Run a select count (*) to get an idea of how many records your query will look through. Then convert that number of rows to dollars using the Pricing Calculator.
 
@@ -471,14 +471,14 @@ We are so thankful for every contribution, which makes sure we can deliver top-n
 
 - [ ] Use Shared VPC to connect all projects, and link Stackdriver to one of the projects.
 - [ ] For each project, create a Stackdriver account. In each project, create a service account for that project and grant it the role of Stackdriver Account Editor in all other projects.
-- [ ] Configure a single Stackdriver account, and link all projects to the same account.
+- [x] Configure a single Stackdriver account, and link all projects to the same account.
 - [ ] Configure a single Stackdriver account for one of the projects. In Stackdriver, create a Group and add the other project names as criteria for that Group.
 
 **[⬆ Back to Top](#table-of-contents)**
 
 ### You need a dynamic way of provisioning VMs on Compute Engine. The exact specifications will be in a dedicated configuration file. You want to follow Google's recommended practices. Which method should you use?
 
-- [ ] Deployment Manager.
+- [x] Deployment Manager.
 - [ ] Cloud Composer.
 - [ ] Managed Instance Group.
 - [ ] Unmanaged Instance Group.
@@ -488,7 +488,7 @@ We are so thankful for every contribution, which makes sure we can deliver top-n
 ### You created an instance of SQL Server 2017 on Compute Engine to test features in the new version. You want to connect to this instance using the fewest number of steps. What should you do?
 
 - [ ] Install a RDP client on your desktop. Verify that a firewall rule for port 3389 exists.
-- [ ] Install a RDP client in your desktop. Set a Windows username and password in the GCP Console. Use the credentials to log in to the instance.
+- [x] Install a RDP client in your desktop. Set a Windows username and password in the GCP Console. Use the credentials to log in to the instance.
 - [ ] Set a Windows password in the GCP Console. Verify that a firewall rule for port 22 exists. Click the RDP button in the GCP Console and supply the credentials to log in.
 - [ ] Set a Windows username and password in the GCP Console. Verify that a firewall rule for port 3389 exists. Click the RDP button in the GCP Console, and supply the credentials to log in.
 
@@ -498,7 +498,7 @@ We are so thankful for every contribution, which makes sure we can deliver top-n
 
 - [ ] Assign the finance team only the Billing Account User role on the billing account.
 - [ ] Assign the engineering team only the Billing Account User role on the billing account.
-- [ ] Assign the finance team the Billing Account User role on the billing account and the Project Billing Manager role on the organization.
+- [x] Assign the finance team the Billing Account User role on the billing account and the Project Billing Manager role on the organization.
 - [ ] Assign the engineering team the Billing Account User role on the billing account and the Project Billing Manager role on the organization.
 
 **[⬆ Back to Top](#table-of-contents)**
@@ -506,7 +506,7 @@ We are so thankful for every contribution, which makes sure we can deliver top-n
 ### You are creating a Google Kubernetes Engine (GKE) cluster with a cluster autoscaler feature enabled. You need to make sure that each node of the cluster will run a monitoring pod that sends container metrics to a third-party monitoring solution. What should you do?
 
 - [ ] Deploy the monitoring pod in a StatefulSet object.
-- [ ] Deploy the monitoring pod in a DaemonSet object.
+- [x] Deploy the monitoring pod in a DaemonSet object.
 - [ ] Reference the monitoring pod in a Deployment object.
 - [ ] Reference the monitoring pod in a cluster initializer at the GKE cluster creation time.
 
