@@ -515,7 +515,7 @@ We are so thankful for every contribution, which makes sure we can deliver top-n
 ### You create a new Google Kubernetes Engine (GKE) cluster and want to make sure that it always runs a supported and stable version of Kubernetes. What should you do?
 
 - [ ] Enable the Node Auto-Repair feature for your GKE cluster.
-- [ ] Enable the Node Auto-Upgrades feature for your GKE cluster.
+- [x] Enable the Node Auto-Upgrades feature for your GKE cluster.
 - [ ] Select the latest available cluster version for your GKE cluster.
 - [ ] Select 'Container-Optimized OS (cos)' as a node image for your GKE cluster.
 
@@ -526,13 +526,13 @@ We are so thankful for every contribution, which makes sure we can deliver top-n
 - [ ] Multi-Regional Storage.
 - [ ] Regional Storage.
 - [ ] Nearline Storage.
-- [ ] Coldline Storage.
+- [x] Coldline Storage.
 
 **[⬆ Back to Top](#table-of-contents)**
 
 ### You need to set up a policy so that videos stored in a specific Cloud Storage Regional bucket are moved to Coldline after 90 days, and then deleted after one year from their creation. How should you set up the policy?
 
-- [ ] Use Cloud Storage Object Lifecycle Management using Age conditions with SetStorageClass and Delete actions. Set the SetStorageClass action to 90 days and the Delete action to 275 days (365-90).
+- [x] Use Cloud Storage Object Lifecycle Management using Age conditions with SetStorageClass and Delete actions. Set the SetStorageClass action to 90 days and the Delete action to 275 days (365-90).
 - [ ] Use Cloud Storage Object Lifecycle Management using Age conditions with SetStorageClass and Delete actions. Set the SetStorageClass action to 90 days and the Delete action to 365 days.
 - [ ] Use gsutil rewrite and set the Delete action to 275 days (365-90).
 - [ ] Use gsutil rewrite and set the Delete action to 365 days.
@@ -541,7 +541,7 @@ We are so thankful for every contribution, which makes sure we can deliver top-n
 
 ### Your company has an existing GCP organization with hundreds of projects and a billing account. Your company recently acquired another company that also has hundreds of projects and its own billing account. You would like to consolidate all GCP costs of both GCP organizations onto a single invoice. You would like to consolidate all costs as of tomorrow. What should you do?
 
-- [ ] Link the acquired company's projects to your company's billing account.
+- [x] Link the acquired company's projects to your company's billing account.
 - [ ] Configure the acquired company's billing account and your company's billing account to export the billing data into the same BigQuery dataset.
 - [ ] Migrate the acquired company's projects into your company's GCP organization. Link the migrated projects to your company's billing account.
 - [ ] Create a new GCP organization and a new billing account. Migrate the acquired company's projects and your company's projects into the new GCP organization and link the projects to the new billing account.
@@ -550,7 +550,7 @@ We are so thankful for every contribution, which makes sure we can deliver top-n
 
 ### You want to configure 10 Compute Engine instances for availability when maintenance occurs. Your requirements state that these instances should attempt to automatically restart if they crash. Also, the instances should be highly available including during system maintenance. What should you do?
 
-- [ ] Create an instance template for the instances. Set the 'Automatic Restart' to on. Set the 'On-host maintenance' to Migrate VM instance. Add the instance template to an instance group.
+- [x] Create an instance template for the instances. Set the 'Automatic Restart' to on. Set the 'On-host maintenance' to Migrate VM instance. Add the instance template to an instance group.
 - [ ] Create an instance template for the instances. Set 'Automatic Restart' to off. Set 'On-host maintenance' to Terminate VM instances. Add the instance template to an instance group.
 - [ ] Create an instance group for the instances. Set the 'Autohealing' health check to healthy (HTTP).
 - [ ] Create an instance group for the instance. Verify that the 'Advanced creation options' setting for 'do not retry machine creation' is set to off.
@@ -559,7 +559,7 @@ We are so thankful for every contribution, which makes sure we can deliver top-n
 
 ### You have a development project with appropriate IAM roles defined. You are creating a production project and want to have the same IAM roles on the new project, using the fewest possible steps. What should you do?
 
-- [ ] Use gcloud iam roles copy and specify the production project as the destination project.
+- [x] Use gcloud iam roles copy and specify the production project as the destination project.
 - [ ] Use gcloud iam roles copy and specify your organization as the destination organization.
 - [ ] In the Google Cloud Platform Console, use the 'create role from role' functionality.
 - [ ] In the Google Cloud Platform Console, use the 'create role' functionality and select all applicable permissions.
@@ -568,7 +568,7 @@ We are so thankful for every contribution, which makes sure we can deliver top-n
 
 ### You are using multiple configurations for gcloud. You want to review the configured Kubernetes Engine cluster of an inactive configuration using the fewest possible steps. What should you do?
 
-- [ ] Use gcloud config configurations describe to review the output.
+- [x] Use gcloud config configurations describe to review the output.
 - [ ] Use gcloud config configurations activate and gcloud config list to review the output.
 - [ ] Use kubectl config get-contexts to review the output.
 - [ ] Use kubectl config use-context and kubectl config view to review the output.
@@ -577,7 +577,7 @@ We are so thankful for every contribution, which makes sure we can deliver top-n
 
 ### You need to configure IAM access audit logging in BigQuery for external auditors. You want to follow Google-recommended practices. What should you do?
 
-- [ ] Add the auditors group to the 'logging.viewer' and 'bigQuery.dataViewer' predefined IAM roles.
+- [x] Add the auditors group to the 'logging.viewer' and 'bigQuery.dataViewer' predefined IAM roles.
 - [ ] Add the auditors group to two new custom IAM roles.
 - [ ] Add the auditor user accounts to the 'logging.viewer' and 'bigQuery.dataViewer' predefined IAM roles.
 - [ ] Add the auditor user accounts to two new custom IAM roles.
@@ -587,7 +587,7 @@ We are so thankful for every contribution, which makes sure we can deliver top-n
 ### You need to create a custom VPC with a single subnet. The subnet's range must be as large as possible. Which range should you use?
 
 - [ ] 0.0.0.0/0.
-- [ ] 10.0.0.0/8.
+- [x] 10.0.0.0/8.
 - [ ] 172.16.0.0/12.
 - [ ] 192.168.0.0/16.
 
@@ -597,7 +597,7 @@ We are so thankful for every contribution, which makes sure we can deliver top-n
 
 - [ ] Run gcloud app restore.
 - [ ] On the App Engine page of the GCP Console, select the application that needs to be reverted and click Revert.
-- [ ] On the App Engine Versions page of the GCP Console, route 100% of the traffic to the previous version.
+- [x] On the App Engine Versions page of the GCP Console, route 100% of the traffic to the previous version.
 - [ ] Deploy the original version as a separate application. Then go to App Engine settings and split traffic between applications so that the original version serves 100% of the requests.
 
 **[⬆ Back to Top](#table-of-contents)**
@@ -606,14 +606,14 @@ We are so thankful for every contribution, which makes sure we can deliver top-n
 
 - [ ] Create an HTTP load balancer with a backend configuration that references an existing instance group. Set the health check to healthy (HTTP).
 - [ ] Create an HTTP load balancer with a backend configuration that references an existing instance group. Define a balancing mode and set the maximum RPS to 10.
-- [ ] Create a Managed Instance Group. Set the Autohealing health check to healthy (HTTP).
+- [x] Create a Managed Instance Group. Set the Autohealing health check to healthy (HTTP).
 - [ ] Create a Managed Instance Group. Verify that the autoscaling setting is on.
 
 **[⬆ Back to Top](#table-of-contents)**
 
 ### You have a Linux VM that must connect to Cloud SQL. You created a service account with the appropriate access rights. You want to make sure that the VM uses this service account instead of the default Compute Engine service account. What should you do?
 
-- [ ] When creating the VM via the web console, specify the service account under the 'Identity and API Access' section.
+- [x] When creating the VM via the web console, specify the service account under the 'Identity and API Access' section.
 - [ ] Download a JSON Private Key for the service account. On the Project Metadata, add that JSON as the value for the key compute-engine-service-account.
 - [ ] Download a JSON Private Key for the service account. On the Custom Metadata of the VM, add that JSON as the value for the key compute-engine-service-account.
 - [ ] Download a JSON Private Key for the service account. After creating the VM, ssh into the VM and save the JSON under ~/.gcloud/compute-engine-service-account.json.
@@ -624,14 +624,14 @@ We are so thankful for every contribution, which makes sure we can deliver top-n
 
 - [ ] Download the private key from the service account, and add it to each VMs custom metadata.
 - [ ] Download the private key from the service account, and add the private key to each VM's SSH keys.
-- [ ] Grant the service account the IAM role of Compute Storage Admin in the project called proj-vm.
+- [x] Grant the service account the IAM role of Compute Storage Admin in the project called proj-vm.
 - [ ] When creating the VMs, set the service account's API scope for Compute Engine to read/write.
 
 **[⬆ Back to Top](#table-of-contents)**
 
 ### You have one GCP account running in your default region and zone and another account running in a non-default region and zone. You want to start a new Compute Engine instance in these two Google Cloud Platform accounts using the command line interface. What should you do?
 
-- [ ] Create two configurations using gcloud config configurations create [NAME]. Run gcloud config configurations activate [NAME] to switch between accounts when running the commands to start the Compute Engine instances.
+- [x] Create two configurations using gcloud config configurations create [NAME]. Run gcloud config configurations activate [NAME] to switch between accounts when running the commands to start the Compute Engine instances.
 - [ ] Create two configurations using gcloud config configurations create [NAME]. Run gcloud configurations list to start the Compute Engine instances.
 - [ ] Activate two configurations using gcloud configurations activate [NAME]. Run gcloud config list to start the Compute Engine instances.
 - [ ] Activate two configurations using gcloud configurations activate [NAME]. Run gcloud configurations list to start the Compute Engine instances.
@@ -642,14 +642,14 @@ We are so thankful for every contribution, which makes sure we can deliver top-n
 
 - [ ] Generate a new SSH key pair. Give the private key to each member of your team. Configure the public key in the metadata of each instance.
 - [ ] Ask each member of the team to generate a new SSH key pair and to send you their public key. Use a configuration management tool to deploy those keys on each instance.
-- [ ] Ask each member of the team to generate a new SSH key pair and to add the public key to their Google account. Grant the 'compute.osAdminLogin' role to the Google group corresponding to this team.
+- [x] Ask each member of the team to generate a new SSH key pair and to add the public key to their Google account. Grant the 'compute.osAdminLogin' role to the Google group corresponding to this team.
 - [ ] Generate a new SSH key pair. Give the private key to each member of your team. Configure the public key as a project-wide public SSH key in your Cloud Platform project and allow project-wide public SSH keys on each instance.
 
 **[⬆ Back to Top](#table-of-contents)**
 
 ### You need to deploy an application, which is packaged in a container image, in a new project. The application exposes an HTTP endpoint and receives very few requests per day. You want to minimize costs. What should you do?
 
-- [ ] Deploy the container on Cloud Run.
+- [x] Deploy the container on Cloud Run.
 - [ ] Deploy the container on Cloud Run on GK.
 - [ ] Deploy the container on App Engine Flexible.
 - [ ] Deploy the container on Google Kubernetes Engine, with cluster autoscaling and horizontal pod autoscaling enabled.
