@@ -661,14 +661,14 @@ We are so thankful for every contribution, which makes sure we can deliver top-n
 - [ ] Download and deploy the Jenkins Java WAR to App Engine Standard.
 - [ ] Create a new Compute Engine instance and install Jenkins through the command line interface.
 - [ ] Create a Kubernetes cluster on Compute Engine and create a deployment with the Jenkins Docker image.
-- [ ] Use GCP Marketplace to launch the Jenkins solution.
+- [x] Use GCP Marketplace to launch the Jenkins solution.
 
 **[⬆ Back to Top](#table-of-contents)**
 
 ### You are building an application that stores relational data from users. Users across the globe will use this application. Your CTO is concerned about the scaling requirements because the size of the user base is unknown. You need to implement a database solution that can scale with your user growth with minimum configuration changes. Which storage solution should you use?
 
 - [ ] Cloud SQL.
-- [ ] Cloud Spanner.
+- [x] Cloud Spanner.
 - [ ] Cloud Firestore.
 - [ ] Cloud Datastore.
 
@@ -676,7 +676,7 @@ We are so thankful for every contribution, which makes sure we can deliver top-n
 
 ### You are using Deployment Manager to create a Google Kubernetes Engine cluster. Using the same Deployment Manager deployment, you also want to create a DaemonSet in the kube-system namespace of the cluster. You want a solution that uses the fewest possible services.
 
-- [ ] Add the cluster's API as a new Type Provider in Deployment Manager, and use the new type to create the DaemonSet.
+- [x] Add the cluster's API as a new Type Provider in Deployment Manager, and use the new type to create the DaemonSet.
 - [ ] Use the Deployment Manager Runtime Configurator to create a new Config resource that contains the DaemonSet definition.
 - [ ] With Deployment Manager, create a Compute Engine instance with a startup script that uses kubectl to create the DaemonSet.
 - [ ] In the cluster's definition in Deployment Manager, add a metadata that has kube-system as key and the DaemonSet manifest as value.
@@ -688,7 +688,7 @@ We are so thankful for every contribution, which makes sure we can deliver top-n
 - [ ] Rely on live migration to move the workload to a machine with more memory.
 - [ ] Use gcloud to add metadata to the V. Set the key to required-memory-size and the value to 8 GB.
 - [ ] Stop the VM, change the machine type to n1-standard-8, and start the VM.
-- [ ] Stop the VM, increase the memory to 8 GB, and start the VM.
+- [x] Stop the VM, increase the memory to 8 GB, and start the VM.
 
 **[⬆ Back to Top](#table-of-contents)**
 
