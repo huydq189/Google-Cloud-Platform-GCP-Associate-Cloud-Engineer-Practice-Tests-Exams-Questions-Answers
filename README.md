@@ -697,7 +697,7 @@ We are so thankful for every contribution, which makes sure we can deliver top-n
 - [ ] Change the default region property setting in the existing GCP project to asia-northeast1.
 - [ ] Change the region property setting in the existing App Engine application from us-central to asia-northeast1.
 - [ ] Create a second App Engine application in the existing GCP project and specify asia-northeast1 as the region to serve your application.
-- [ ] Create a new GCP project and create an App Engine application inside this new project. Specify asia-northeast1 as the region to serve your application.
+- [x] Create a new GCP project and create an App Engine application inside this new project. Specify asia-northeast1 as the region to serve your application.
 
 **[⬆ Back to Top](#table-of-contents)**
 
@@ -706,7 +706,7 @@ We are so thankful for every contribution, which makes sure we can deliver top-n
 - [ ] Contact [email protected] with your bank account details and request a corporate billing account for your company.
 - [ ] Create a ticket with Google Support and wait for their call to share your credit card details over the phone.
 - [ ] In the Google Platform Console, go to the Resource Manage and move all projects to the root Organization.
-- [ ] In the Google Cloud Platform Console, create a new billing account and set up a payment method.
+- [x] In the Google Cloud Platform Console, create a new billing account and set up a payment method.
 
 **[⬆ Back to Top](#table-of-contents)**
 
@@ -714,14 +714,14 @@ We are so thankful for every contribution, which makes sure we can deliver top-n
 
 - [ ] Use kubectl app deploy `<dockerfilename>`.
 - [ ] Use gcloud app deploy `<dockerfilename>`.
-- [ ] Create a docker image from the Dockerfile and upload it to Container Registry. Create a Deployment YAML file to point to that image. Use kubectl to create the deployment with that file.
+- [x] Create a docker image from the Dockerfile and upload it to Container Registry. Create a Deployment YAML file to point to that image. Use kubectl to create the deployment with that file.
 - [ ] Create a docker image from the Dockerfile and upload it to Cloud Storage. Create a Deployment YAML file to point to that image. Use kubectl to create the deployment with that file.
 
 **[⬆ Back to Top](#table-of-contents)**
 
 ### You have a project for your App Engine application that serves a development environment. The required testing has succeeded and you want to create a new project to serve as your production environment. What should you do?
 
-- [ ] Use gcloud to create the new project, and then deploy your application to the new project.
+- [x] Use gcloud to create the new project, and then deploy your application to the new project.
 - [ ] Use gcloud to create the new project and to copy the deployed application to the new project.
 - [ ] Create a Deployment Manager configuration file that copies the current App Engine deployment into a new project.
 - [ ] Deploy your application again using gcloud and specify the project parameter with the new project name to create the new project.
@@ -730,7 +730,7 @@ We are so thankful for every contribution, which makes sure we can deliver top-n
 
 ### You are building an application that will run in your data center. The application will use Google Cloud Platform (GCP) services like AutoML. You created a service account that has appropriate access to AutoML. You need to enable authentication to the APIs from your on-premises environment. What should you do?
 
-- [ ] Use service account credentials in your on-premises application.
+- [x] Use service account credentials in your on-premises application.
 - [ ] Use gcloud to create a key file for the service account that has appropriate permissions.
 - [ ] Set up direct interconnect between your data center and Google Cloud Platform to enable authentication for your on-premises applications.
 - [ ] Go to the IAM & admin console, grant a user account permissions similar to the service account permissions, and use this user account for authentication from your data center.
@@ -741,14 +741,14 @@ We are so thankful for every contribution, which makes sure we can deliver top-n
 
 - [ ] Enable Cloud CDN on the website frontend.
 - [ ] Enable 'Share publicly' on the PDF file objects.
-- [ ] Set Content-Type metadata to application/pdf on the PDF file objects.
+- [x] Set Content-Type metadata to application/pdf on the PDF file objects.
 - [ ] Add a label to the storage bucket with a key of Content-Type and value of application/pdf.
 
 **[⬆ Back to Top](#table-of-contents)**
 
 ### You have an application that looks for its licensing server on the IP 10.0.3.21. You need to deploy the licensing server on Compute Engine. You do not want to change the configuration of the application and want the application to be able to reach the licensing server. What should you do?
 
-- [ ] Reserve the IP 10.0.3.21 as a static internal IP address using gcloud and assign it to the licensing server.
+- [x] Reserve the IP 10.0.3.21 as a static internal IP address using gcloud and assign it to the licensing server.
 - [ ] Reserve the IP 10.0.3.21 as a static public IP address using gcloud and assign it to the licensing server.
 - [ ] Use the IP 10.0.3.21 as a custom ephemeral IP address and assign it to the licensing server.
 - [ ] Start the licensing server with an automatic ephemeral IP address, and then promote it to a static internal IP address.
@@ -760,14 +760,14 @@ We are so thankful for every contribution, which makes sure we can deliver top-n
 - [ ] Manual Scaling with 3 instances.
 - [ ] Basic Scaling with min_instances set to 3.
 - [ ] Basic Scaling with max_instances set to 3.
-- [ ] Automatic Scaling with min_idle_instances set to 3.
+- [x] Automatic Scaling with min_idle_instances set to 3.
 
 **[⬆ Back to Top](#table-of-contents)**
 
 ### You are the project owner of a GCP project and want to delegate control to colleagues to manage buckets and files in Cloud Storage. You want to follow Google-recommended practices. Which IAM roles should you grant your colleagues?
 
 - [ ] Project Editor.
-- [ ] Storage Admin.
+- [x] Storage Admin.
 - [ ] Storage Object Admin.
 - [ ] Storage Object Creator.
 
@@ -776,7 +776,7 @@ We are so thankful for every contribution, which makes sure we can deliver top-n
 ### You need to update a deployment in Deployment Manager without any resource downtime in the deployment. Which command should you use?
 
 - [ ] gcloud deployment-manager deployments create –config <deployment-config-path>.
-- [ ] gcloud deployment-manager deployments update –config <deployment-config-path>.
+- [x] gcloud deployment-manager deployments update –config <deployment-config-path>.
 - [ ] gcloud deployment-manager resources create –config <deployment-config-path>.
 - [ ] gcloud deployment-manager resources update –config <deployment-config-path>.
 
@@ -787,14 +787,14 @@ We are so thankful for every contribution, which makes sure we can deliver top-n
 - [ ] Set the maximum number of instances to 1.
 - [ ] Decrease the maximum number of instances to 3.
 - [ ] Use a TCP health check instead of an HTTP health check.
-- [ ] Increase the initial delay of the HTTP health check to 200 seconds.
+- [x] Increase the initial delay of the HTTP health check to 200 seconds.
 
 **[⬆ Back to Top](#table-of-contents)**
 
 ### You have 32 GB of data in a single file that you need to upload to a Nearline Storage bucket. The WAN connection you are using is rated at 1 Gbps, and you are the only one on the connection. You want to use as much of the rated 1 Gbps as possible to transfer the file rapidly. How should you upload the file?
 
 - [ ] Use the GCP Console to transfer the file instead of gsutil.
-- [ ] Enable parallel composite uploads using gsutil on the file transfer.
+- [x] Enable parallel composite uploads using gsutil on the file transfer.
 - [ ] Decrease the TCP window size on the machine initiating the transfer.
 - [ ] Change the storage class of the bucket from Nearline to Multi-Regional.
 
@@ -805,7 +805,7 @@ We are so thankful for every contribution, which makes sure we can deliver top-n
 - [ ] Check the app.yaml file for your application and check project settings.
 - [ ] Check the web-application.xml file for your application and check project settings.
 - [ ] Go to Deployment Manager and review settings for deployment of applications.
-- [ ] Go to Cloud Shell and run gcloud config list to review the Google Cloud configuration used for deployment.
+- [x] Go to Cloud Shell and run gcloud config list to review the Google Cloud configuration used for deployment.
 
 **[⬆ Back to Top](#table-of-contents)**
 
@@ -813,7 +813,7 @@ We are so thankful for every contribution, which makes sure we can deliver top-n
 
 - [ ] Run gcloud iam roles list. Review the output section.
 - [ ] Run gcloud iam service-accounts list. Review the output section.
-- [ ] Navigate to the project and then to the IAM section in the GCP Console. Review the members and roles.
+- [x] Navigate to the project and then to the IAM section in the GCP Console. Review the members and roles.
 - [ ] Navigate to the project and then to the Roles section in the GCP Console. Review the roles and status.
 
 **[⬆ Back to Top](#table-of-contents)**
