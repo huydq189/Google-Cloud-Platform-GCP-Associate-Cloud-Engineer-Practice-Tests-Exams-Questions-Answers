@@ -822,7 +822,7 @@ We are so thankful for every contribution, which makes sure we can deliver top-n
 
 - [ ] Select Google Kubernetes Engine. Use a single-node cluster with a small instance type.
 - [ ] Select Google Kubernetes Engine. Use a three-node cluster with micro instance types.
-- [ ] Select Compute Engine. Use preemptible VM instances of the appropriate standard machine type.
+- [x] Select Compute Engine. Use preemptible VM instances of the appropriate standard machine type.
 - [ ] Select Compute Engine. Use VM instance types that support micro bursting.
 
 **[⬆ Back to Top](#table-of-contents)**
