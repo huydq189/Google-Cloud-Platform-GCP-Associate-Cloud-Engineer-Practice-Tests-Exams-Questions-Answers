@@ -1000,7 +1000,7 @@ We are so thankful for every contribution, which makes sure we can deliver top-n
 ### You need to enable traffic between multiple groups of Compute Engine instances that are currently running two different GCP projects. Each group of Compute Engine instances is running in its own VPC. What should you do?
 
 - [ ] Verify that both projects are in a GCP Organization. Create a new VPC and add all instances.
-- [ ] Verify that both projects are in a GCP Organization. Share the VPC from one project and request that the Compute Engine instances in the other project use this shared VPC.
+- [x] Verify that both projects are in a GCP Organization. Share the VPC from one project and request that the Compute Engine instances in the other project use this shared VPC.
 - [ ] Verify that you are the Project Administrator of both projects. Create two new VPCs and add all instances.
 - [ ] Verify that you are the Project Administrator of both projects. Create a new VPC and add all instances.
 
@@ -1010,23 +1010,23 @@ We are so thankful for every contribution, which makes sure we can deliver top-n
 
 - [ ] Create a custom role with view-only project permissions. Add the user's account to the custom role.
 - [ ] Create a custom role with view-only service permissions. Add the user's account to the custom role.
-- [ ] Select the built-in IAM project Viewer role. Add the user's account to this role.
+- [x] Select the built-in IAM project Viewer role. Add the user's account to this role.
 - [ ] Select the built-in IAM service Viewer role. Add the user's account to this role.
 
 **[⬆ Back to Top](#table-of-contents)**
 
-### You are operating a Google Kubernetes Engine (GKE) cluster for your company where different teams can run non-production workloads. Your Machine Learning (ML) team needs access to Nvidia Tesla P100 GPUs to train their models. You want to minimize effort and cost. What should you do?
+### You are operating a Gogle Kubernetes Engine (GKE) cluster for your company where different teams can run non-production workloads. Your Machine Learning (ML) team needs access to Nvidia Tesla P100 GPUs to train their models. You want to minimize effort and cost. What should you do?
 
 - [ ] Ask your ML team to add the accelerator: gpu annotation to their pod specification.
 - [ ] Recreate all the nodes of the GKE cluster to enable GPUs on all of them.
 - [ ] Create your own Kubernetes cluster on top of Compute Engine with nodes that have GPUs. Dedicate this cluster to your ML team.
-- [ ] Add a new, GPU-enabled, node pool to the GKE cluster. Ask your ML team to add the cloud.google.com/gke -accelerator: nvidia-tesla-p100 nodeSelector to their pod specification.
+- [x] Add a new, GPU-enabled, node pool to the GKE cluster. Ask your ML team to add the cloud.google.com/gke -accelerator: nvidia-tesla-p100 nodeSelector to their pod specification.
 
 **[⬆ Back to Top](#table-of-contents)**
 
 ### Your VMs are running in a subnet that has a subnet mask of 255.255.255.240. The current subnet has no more free IP addresses and you require an additional 10 IP addresses for new VMs. The existing and new VMs should all be able to reach each other without additional routes. What should you do?
 
-- [ ] Use gcloud to expand the IP range of the current subnet.
+- [x] Use gcloud to expand the IP range of the current subnet.
 - [ ] Delete the subnet, and recreate it using a wider range of IP addresses.
 - [ ] Create a new project. Use Shared VPC to share the current network with the new project.
 - [ ] Create a new subnet with the same starting IP but a wider range to overwrite the current subnet.
@@ -1036,7 +1036,7 @@ We are so thankful for every contribution, which makes sure we can deliver top-n
 ### Your organization uses G Suite for communication and collaboration. All users in your organization have a G Suite account. You want to grant some G Suite users access to your Cloud Platform project. What should you do?
 
 - [ ] Enable Cloud Identity in the GCP Console for your domain.
-- [ ] Grant them the required IAM roles using their G Suite email address.
+- [x] Grant them the required IAM roles using their G Suite email address.
 - [ ] Create a CSV sheet with all users' email addresses. Use the gcloud command line tool to convert them into Google Cloud Platform accounts.
 - [ ] In the G Suite console, add the users to a special group called cloud-console-users@yourdomain.com. Rely on the default behavior of the Cloud Platform to grant users access if they are members of this group.
 
@@ -1044,7 +1044,7 @@ We are so thankful for every contribution, which makes sure we can deliver top-n
 
 ### You have a Google Cloud Platform account with access to both production and development projects. You need to create an automated process to list all compute instances in development and production projects on a daily basis. What should you do?
 
-- [ ] Create two configurations using gcloud config. Write a script that sets configurations as active, individually. For each configuration, use gcloud compute instances list to get a list of compute resources.
+- [x] Create two configurations using gcloud config. Write a script that sets configurations as active, individually. For each configuration, use gcloud compute instances list to get a list of compute resources.
 - [ ] Create two configurations using gsutil config. Write a script that sets configurations as active, individually. For each configuration, use gsutil compute instances list to get a list of compute resources.
 - [ ] Go to Cloud Shell and export this information to Cloud Storage on a daily basis.
 - [ ] Go to GCP Console and export this information to Cloud SQL on a daily basis.
@@ -1055,14 +1055,14 @@ We are so thankful for every contribution, which makes sure we can deliver top-n
 
 - [ ] Load data in Cloud Datastore and run a SQL query against it.
 - [ ] Create a BigQuery table and load data in BigQuery. Run a SQL query on this table and drop this table after you complete your request.
-- [ ] Create external tables in BigQuery that point to Cloud Storage buckets and run a SQL query on these external tables to complete your request.
+- [x] Create external tables in BigQuery that point to Cloud Storage buckets and run a SQL query on these external tables to complete your request.
 - [ ] Create a Hadoop cluster and copy the AVRO file to NDFS by compressing it. Load the file in a hive table and provide access to your analysts so that they can run SQL queries.
 
 **[⬆ Back to Top](#table-of-contents)**
 
 ### You need to verify that a Google Cloud Platform service account was created at a particular time. What should you do?
 
-- [ ] Filter the Activity log to view the Configuration category. Filter the Resource type to Service Account.
+- [x] Filter the Activity log to view the Configuration category. Filter the Resource type to Service Account.
 - [ ] Filter the Activity log to view the Configuration category. Filter the Resource type to Google Project.
 - [ ] Filter the Activity log to view the Data Access category. Filter the Resource type to Service Account.
 - [ ] Filter the Activity log to view the Data Access category. Filter the Resource type to Google Project.
@@ -1073,14 +1073,14 @@ We are so thankful for every contribution, which makes sure we can deliver top-n
 
 - [ ] Add the network tag allow-udp-636 to the VM instance running the LDAP server.
 - [ ] Create a route called allow-udp-636 and set the next hop to be the VM instance running the LDAP server.
-- [ ] Add a network tag of your choice to the instance. Create a firewall rule to allow ingress on UDP port 636 for that network tag.
+- [x] Add a network tag of your choice to the instance. Create a firewall rule to allow ingress on UDP port 636 for that network tag.
 - [ ] Add a network tag of your choice to the instance running the LDAP server. Create a firewall rule to allow egress on UDP port 636 for that network tag.
 
 **[⬆ Back to Top](#table-of-contents)**
 
 ### You need to set a budget alert for use of Compute Engine services on one of the three Google Cloud Platform projects that you manage. All three projects are linked to a single billing account. What should you do?
 
-- [ ] Verify that you are the project billing administrator. Select the associated billing account and create a budget and alert for the appropriate project.
+- [x] Verify that you are the project billing administrator. Select the associated billing account and create a budget and alert for the appropriate project.
 - [ ] Verify that you are the project billing administrator. Select the associated billing account and create a budget and a custom alert.
 - [ ] Verify that you are the project administrator. Select the associated billing account and create a budget for the appropriate project.
 - [ ] Verify that you are project administrator. Select the associated billing account and create a budget and a custom alert.
