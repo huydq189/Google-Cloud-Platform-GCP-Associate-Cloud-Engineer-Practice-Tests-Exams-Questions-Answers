@@ -894,7 +894,7 @@ We are so thankful for every contribution, which makes sure we can deliver top-n
 
 ### Your projects incurred more costs than you expected last month. Your research reveals that a development GKE container emitted a huge number of logs, which resulted in higher costs. You want to disable the logs quickly using the minimum number of steps. What should you do?
 
-- [ ] 1. Go to the Logs ingestion window in Stackdriver Logging, and disable the log source for the GKE container resource.
+- [x] 1. Go to the Logs ingestion window in Stackdriver Logging, and disable the log source for the GKE container resource.
 - [ ] 1. Go to the Logs ingestion window in Stackdriver Logging, and disable the log source for the GKE Cluster Operations resource.
 - [ ] 1. Go to the GKE console, and delete existing clusters. 2. Recreate a new cluster. 3. Clear the option to enable legacy Stackdriver Logging.
 - [ ] 1. Go to the GKE console, and delete existing clusters. 2. Recreate a new cluster. 3. Clear the option to enable legacy Stackdriver Monitoring.
@@ -906,7 +906,7 @@ We are so thankful for every contribution, which makes sure we can deliver top-n
 ![YAML of microservice myapp1](images/yaml.jpg)
 
 - [ ] Store the database password inside the Docker image of the container, not in the YAML file.
-- [ ] Store the database password inside a Secret object. Modify the YAML file to populate the DB_PASSWORD environment variable from the Secret.
+- [x] Store the database password inside a Secret object. Modify the YAML file to populate the DB_PASSWORD environment variable from the Secret.
 - [ ] Store the database password inside a ConfigMap object. Modify the YAML file to populate the DB_PASSWORD environment variable from the ConfigMap.
 - [ ] Store the database password in a file inside a Kubernetes persistent volume, and use a persistent volume claim to mount the volume to the container.
 
@@ -914,7 +914,7 @@ We are so thankful for every contribution, which makes sure we can deliver top-n
 
 ### You have an application running in Google Kubernetes Engine (GKE) with cluster autoscaling enabled. The application exposes a TCP endpoint. There are several replicas of this application. You have a Compute Engine instance in the same region, but in another Virtual Private Cloud (VPC), called gce-network, that has no overlapping IP ranges with the first VPC. This instance needs to connect to the application on GKE. You want to minimize effort. What should you do?
 
-- [ ] 1. In GKE, create a Service of type LoadBalancer that uses the application's Pods as backend. 2. Set the service's externalTrafficPolicy to Cluster. 3. Configure the Compute Engine instance to use the address of the load balancer that has been created.
+- [x] 1. In GKE, create a Service of type LoadBalancer that uses the application's Pods as backend. 2. Set the service's externalTrafficPolicy to Cluster. 3. Configure the Compute Engine instance to use the address of the load balancer that has been created.
 - [ ] 1. In GKE, create a Service of type NodePort that uses the application's Pods as backend. 2. Create a Compute Engine instance called proxy with 2 network interfaces, one in each VPC. 3. Use iptables on this instance to forward traffic from gce-network to the GKE nodes. 4. Configure the Compute Engine instance to use the address of proxy in gce-network as endpoint.
 - [ ] 1. In GKE, create a Service of type LoadBalancer that uses the application's Pods as backend. 2. Add an annotation to this service: cloud.google.com/load-balancer-type: Internal 3. Peer the two VPCs together. 4. Configure the Compute Engine instance to use the address of the load balancer that has been created.
 - [ ] 1. In GKE, create a Service of type LoadBalancer that uses the application's Pods as backend. 2. Add a Cloud Armor Security Policy to the load balancer that whitelists the internal IPs of the MIG's instances. 3. Configure the Compute Engine instance to use the address of the load balancer that has been created.
@@ -923,7 +923,7 @@ We are so thankful for every contribution, which makes sure we can deliver top-n
 
 ### You are using Container Registry to centrally store your company's container images in a separate project. In another project, you want to create a Google Kubernetes Engine (GKE) cluster. You want to ensure that Kubernetes can download images from Container Registry. What should you do?
 
-- [ ] In the project where the images are stored, grant the Storage Object Viewer IAM role to the service account used by the Kubernetes nodes.
+- [x] In the project where the images are stored, grant the Storage Object Viewer IAM role to the service account used by the Kubernetes nodes.
 - [ ] When you create the GKE cluster, choose the Allow full access to all Cloud APIs option under 'Access scopes'.
 - [ ] Create a service account, and give it access to Cloud Storage. Create a P12 key for this service account and use it as an imagePullSecrets in Kubernetes.
 - [ ] Configure the ACLs on each image in Cloud Storage to give read-only access to the default Compute Engine service account.
@@ -938,7 +938,7 @@ We are so thankful for every contribution, which makes sure we can deliver top-n
 
 - [ ] Review details of the myapp-service Service object and check for error messages.
 - [ ] Review details of the myapp-deployment Deployment object and check for error messages.
-- [ ] Review details of myapp-deployment-58ddbbb995-lp86m Pod and check for warning messages.
+- [x] Review details of myapp-deployment-58ddbbb995-lp86m Pod and check for warning messages.
 - [ ] View logs of the container in myapp-deployment-58ddbbb995-lp86m pod and check for warning messages.
 
 **[⬆ Back to Top](#table-of-contents)**
@@ -946,7 +946,7 @@ We are so thankful for every contribution, which makes sure we can deliver top-n
 ### You are setting up a Windows VM on Compute Engine and want to make sure you can log in to the VM via RDP. What should you do?
 
 - [ ] After the VM has been created, use your Google Account credentials to log in into the VM.
-- [ ] After the VM has been created, use gcloud compute reset-windows-password to retrieve the login credentials for the VM.
+- [x] After the VM has been created, use gcloud compute reset-windows-password to retrieve the login credentials for the VM.
 - [ ] When creating the VM, add metadata to the instance using 'windows-password' as the key and a password as the value.
 - [ ] After the VM has been created, download the JSON Private Key for the default Compute Engine service account. Use the credentials in the JSON file to log in to the VM.
 
@@ -954,7 +954,7 @@ We are so thankful for every contribution, which makes sure we can deliver top-n
 
 ### You want to configure an SSH connection to a single Compute Engine instance for users in the dev1 group. This instance is the only resource in this particular Google Cloud Platform project that the dev1 users should be able to connect to. What should you do?
 
-- [ ] Set metadata to enable-oslogin=true for the instance. Grant the dev1 group the compute.osLogin role. Direct them to use the Cloud Shell to ssh to that instance.
+- [x] Set metadata to enable-oslogin=true for the instance. Grant the dev1 group the compute.osLogin role. Direct them to use the Cloud Shell to ssh to that instance.
 - [ ] Set metadata to enable-oslogin=true for the instance. Set the service account to no service account for that instance. Direct them to use the Cloud Shell to ssh to that instance.
 - [ ] Enable block project wide keys for the instance. Generate an SSH key for each user in the dev1 group. Distribute the keys to dev1 users and direct them to use their third-party tools to connect.
 - [ ] Enable block project wide keys for the instance. Generate an SSH key and associate the key with that instance. Distribute the key to dev1 users and direct them to use their third-party tools to connect.
@@ -963,7 +963,7 @@ We are so thankful for every contribution, which makes sure we can deliver top-n
 
 ### You need to produce a list of the enabled Google Cloud Platform APIs for a GCP project using the gcloud command line in the Cloud Shell. The project name is my-project. What should you do?
 
-- [ ] Run gcloud projects list to get the project ID, and then run gcloud services list --project <project ID>.
+- [x] Run gcloud projects list to get the project ID, and then run gcloud services list --project <project ID>.
 - [ ] Run gcloud init to set the current project to my-project, and then run gcloud services list --available.
 - [ ] Run gcloud info to view the account value, and then run gcloud services list --account <Account>.
 - [ ] Run gcloud projects describe <project ID> to verify the project value, and then run gcloud services list --available.
@@ -975,13 +975,13 @@ We are so thankful for every contribution, which makes sure we can deliver top-n
 - [ ] Deploy a new version of your application in Google Kubernetes Engine instead of App Engine and then use GCP Console to split traffic.
 - [ ] Deploy a new version of your application in a Compute Engine instance instead of App Engine and then use GCP Console to split traffic.
 - [ ] Deploy a new version as a separate app in App Engine. Then configure App Engine using GCP Console to split traffic between the two apps.
-- [ ] Deploy a new version of your application in App Engine. Then go to App Engine settings in GCP Console and split traffic between the current version and newly deployed versions accordingly.
+- [x] Deploy a new version of your application in App Engine. Then go to App Engine settings in GCP Console and split traffic between the current version and newly deployed versions accordingly.
 
 **[⬆ Back to Top](#table-of-contents)**
 
 ### You need to provide a cost estimate for a Kubernetes cluster using the GCP pricing calculator for Kubernetes. Your workload requires high IOPs, and you will also be using disk snapshots. You start by entering the number of nodes, average hours, and average days. What should you do next?
 
-- [ ] Fill in local SSD. Fill in persistent disk storage and snapshot storage.
+- [x] Fill in local SSD. Fill in persistent disk storage and snapshot storage.
 - [ ] Fill in local SSD. Add estimated cost for cluster management.
 - [ ] Select Add GPUs. Fill in persistent disk storage and snapshot storage.
 - [ ] Select Add GPUs. Add estimated cost for cluster management.
@@ -990,7 +990,7 @@ We are so thankful for every contribution, which makes sure we can deliver top-n
 
 ### You are using Google Kubernetes Engine with autoscaling enabled to host a new application. You want to expose this new application to the public, using HTTPS on a public IP address. What should you do?
 
-- [ ] Create a Kubernetes Service of type NodePort for your application, and a Kubernetes Ingress to expose this Service via a Cloud Load Balancer.
+- [x] Create a Kubernetes Service of type NodePort for your application, and a Kubernetes Ingress to expose this Service via a Cloud Load Balancer.
 - [ ] Create a Kubernetes Service of type ClusterIP for your application. Configure the public DNS name of your application using the IP of this Service.
 - [ ] Create a Kubernetes Service of type NodePort to expose the application on port 443 of each node of the Kubernetes cluster. Configure the public DNS name of your application with the IP of every node of the cluster to achieve load-balancing.
 - [ ] Create a HAProxy pod in the cluster to load-balance the traffic to all the pods of the application. Forward the public traffic to HAProxy with an iptable rule. Configure the DNS name of your application using the public IP of the node HAProxy is running on.
