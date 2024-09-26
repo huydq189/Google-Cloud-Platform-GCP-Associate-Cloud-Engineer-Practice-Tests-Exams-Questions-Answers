@@ -1139,7 +1139,7 @@ We are so thankful for every contribution, which makes sure we can deliver top-n
 - [ ] The pending Pod's resource requests are too large to fit on a single node of the cluster.
 - [ ] Too many Pods are already running in the cluster, and there are not enough resources left to schedule the pending Pod.
 - [ ] The node pool is configured with a service account that does not have permission to pull the container image used by the pending Pod.
-- [ ] The pending Pod was originally scheduled on a node that has been preempted between the creation of the Deployment and your verification of the Pods' status. It is currently being rescheduled on a new node.
+- [x] The pending Pod was originally scheduled on a node that has been preempted between the creation of the Deployment and your verification of the Pods' status. It is currently being rescheduled on a new node.
 
 **[⬆ Back to Top](#table-of-contents)**
 
@@ -1148,17 +1148,17 @@ We are so thankful for every contribution, which makes sure we can deliver top-n
 - [ ] Open the Cloud Spanner console to review configurations.
 - [ ] Open the IAM &amp; admin console to review IAM policies for Cloud Spanner roles.
 - [ ] Go to the Stackdriver Monitoring console and review information for Cloud Spanner.
-- [ ] Go to the Stackdriver Logging console, review admin activity logs, and filter them for Cloud Spanner IAM roles.
+- [x] Go to the Stackdriver Logging console, review admin activity logs, and filter them for Cloud Spanner IAM roles.
 
 **[⬆ Back to Top](#table-of-contents)**
 
 ### Your company implemented BigQuery as an enterprise data warehouse. Users from multiple business units run queries on this data warehouse. However, you notice that query costs for BigQuery are very high, and you need to control costs. Which two methods should you use? (Choose two.)
 
 - [ ] Split the users from business units to multiple projects.
-- [ ] Apply a user- or project-level custom query quota for BigQuery data warehouse.
+- [x] Apply a user- or project-level custom query quota for BigQuery data warehouse.
 - [ ] Create separate copies of your BigQuery data warehouse for each business unit.
 - [ ] Split your BigQuery data warehouse into multiple data warehouses for each business unit.
-- [ ] Change your BigQuery query model from on-demand to flat rate. Apply the appropriate number of slots to each Project.
+- [x] Change your BigQuery query model from on-demand to flat rate. Apply the appropriate number of slots to each Project.
 
 **[⬆ Back to Top](#table-of-contents)**
 
