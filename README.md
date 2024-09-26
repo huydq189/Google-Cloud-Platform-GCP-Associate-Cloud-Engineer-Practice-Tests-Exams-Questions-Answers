@@ -1089,7 +1089,7 @@ We are so thankful for every contribution, which makes sure we can deliver top-n
 
 ### You are migrating a production-critical on-premises application that requires 96 vCPUs to perform its task. You want to make sure the application runs in a similar environment on GCP. What should you do?
 
-- [ ] When creating the VM, use machine type n1-standard-96.
+- [x] When creating the VM, use machine type n1-standard-96.
 - [ ] When creating the VM, use Intel Skylake as the CPU platform.
 - [ ] Create the VM using Compute Engine default settings. Use gcloud to modify the running instance to have 96 vCPUs.
 - [ ] Start the VM using Compute Engine default settings, and adjust as you go based on Rightsizing Recommendations.
@@ -1099,7 +1099,7 @@ We are so thankful for every contribution, which makes sure we can deliver top-n
 ### You want to configure a solution for archiving data in a Cloud Storage bucket. The solution must be cost-effective. Data with multiple versions should be archived after 30 days. Previous versions are accessed once a month for reporting. This archive data is also occasionally updated at month-end. What should you do?
 
 - [ ] Add a bucket lifecycle rule that archives data with newer versions after 30 days to Coldline Storage.
-- [ ] Add a bucket lifecycle rule that archives data with newer versions after 30 days to Nearline Storage.
+- [x] Add a bucket lifecycle rule that archives data with newer versions after 30 days to Nearline Storage.
 - [ ] Add a bucket lifecycle rule that archives data from regional storage after 30 days to Coldline Storage.
 - [ ] Add a bucket lifecycle rule that archives data from regional storage after 30 days to Nearline Storage.
 
@@ -1110,7 +1110,7 @@ We are so thankful for every contribution, which makes sure we can deliver top-n
 - [ ] In Google Cloud, configure the VPC as a host for Shared VP.
 - [ ] In Google Cloud, configure the VPC for VPC Network Peering.
 - [ ] Create bastion hosts both in your on-premises environment and on Google Cloud. Configure both as proxy servers using their public IP addresses.
-- [ ] Set up Cloud VPN between the infrastructure on-premises and Google Cloud.
+- [x] Set up Cloud VPN between the infrastructure on-premises and Google Cloud.
 
 **[⬆ Back to Top](#table-of-contents)**
 
@@ -1119,13 +1119,13 @@ We are so thankful for every contribution, which makes sure we can deliver top-n
 - [ ] Select Multi-Regional Storage. Add a bucket lifecycle rule that archives data after 30 days to Coldline Storage.
 - [ ] Select Multi-Regional Storage. Add a bucket lifecycle rule that archives data after 30 days to Nearline Storage.
 - [ ] Select Regional Storage. Add a bucket lifecycle rule that archives data after 30 days to Nearline Storage.
-- [ ] Select Regional Storage. Add a bucket lifecycle rule that archives data after 30 days to Coldline Storage.
+- [x] Select Regional Storage. Add a bucket lifecycle rule that archives data after 30 days to Coldline Storage.
 
 **[⬆ Back to Top](#table-of-contents)**
 
 ### Your company uses BigQuery for data warehousing. Over time, many different business units in your company have created 1000+ datasets across hundreds of projects. Your CIO wants you to examine all datasets to find tables that contain an employee_ssn column. You want to minimize effort in performing this task. What should you do?
 
-- [ ] Go to Data Catalog and search for employee_ssn in the search box.
+- [x] Go to Data Catalog and search for employee_ssn in the search box.
 - [ ] Write a shell script that uses the bq command line tool to loop through all the projects in your organization.
 - [ ] Write a script that loops through all the projects in your organization and runs a query on INFORMATION_SCHEMA.COLUMNS view to find the employee_ssn column.
 - [ ] Write a Cloud Dataflow job that loops through all the projects in your organization and runs a query on INFORMATION_SCHEMA.COLUMNS view to find employee_ssn column.
