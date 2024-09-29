@@ -1403,7 +1403,7 @@ We are so thankful for every contribution, which makes sure we can deliver top-n
 ### You have a Compute Engine instance hosting a production application. You want to receive an email if the instance consumes more than 90% of its CPU resources for more than 15 minutes. You want to use Google services. What should you do?
 
 - [ ] 1. Create a consumer Gmail account. 2. Write a script that monitors the CPU usage. 3. When the CPU usage exceeds the threshold, have that script send an email using the Gmail account and smtp.gmail.com on port 25 as SMTP server.
-- [ ] 1. Create a Stackdriver Workspace, and associate your Google Cloud Platform (GCP) project with it. 2. Create an Alerting Policy in Stackdriver that uses the threshold as a trigger condition. 3. Configure your email address in the notification channel.
+- [x] 1. Create a Stackdriver Workspace, and associate your Google Cloud Platform (GCP) project with it. 2. Create an Alerting Policy in Stackdriver that uses the threshold as a trigger condition. 3. Configure your email address in the notification channel.
 - [ ] 1. Create a Stackdriver Workspace, and associate your GCP project with it. 2. Write a script that monitors the CPU usage and sends it as a custom metric to Stackdriver. 3. Create an uptime check for the instance in Stackdriver.
 - [ ] 1. In Stackdriver Logging, create a logs-based metric to extract the CPU usage by using this regular expression: CPU Usage: ([0-9] {1,3})% 2. In Stackdriver Monitoring, create an Alerting Policy based on this metric. 3. Configure your email address in the notification channel.
 
@@ -1414,7 +1414,7 @@ We are so thankful for every contribution, which makes sure we can deliver top-n
 - [ ] Create a cron job that runs on a scheduled basis to review Cloud Monitoring metrics, and then resize the Spanner instance accordingly.
 - [ ] Create a Cloud Monitoring alerting policy to send an alert to oncall SRE emails when Cloud Spanner CPU exceeds the threshold. SREs would scale resources up or down accordingly.
 - [ ] Create a Cloud Monitoring alerting policy to send an alert to Google Cloud Support email when Cloud Spanner CPU exceeds your threshold. Google support would scale resources up or down accordingly.
-- [ ] Create a Cloud Monitoring alerting policy to send an alert to webhook when Cloud Spanner CPU is over or under your threshold. Create a Cloud Function that listens to HTTP and resizes Spanner resources accordingly.
+- [x] Create a Cloud Monitoring alerting policy to send an alert to webhook when Cloud Spanner CPU is over or under your threshold. Create a Cloud Function that listens to HTTP and resizes Spanner resources accordingly.
 
 **[⬆ Back to Top](#table-of-contents)**
 
@@ -1422,14 +1422,14 @@ We are so thankful for every contribution, which makes sure we can deliver top-n
 
 - [ ] Set up a budget alert on the project with an amount of 100 dollars, a threshold of 100%, and notification type of email.
 - [ ] Set up a budget alert on the billing account with an amount of 100 dollars, a threshold of 100%, and notification type of email.
-- [ ] Export the billing data to BigQuery. Create a Cloud Function that uses BigQuery to sum the egress network costs of the exported billing data for the Apache web server for the current month and sends an email if it is over 100 dollars. Schedule the Cloud Function using Cloud Scheduler to run hourly.
+- [x] Export the billing data to BigQuery. Create a Cloud Function that uses BigQuery to sum the egress network costs of the exported billing data for the Apache web server for the current month and sends an email if it is over 100 dollars. Schedule the Cloud Function using Cloud Scheduler to run hourly.
 - [ ] Use the Cloud Logging Agent to export the Apache web server logs to Cloud Logging. Create a Cloud Function that uses BigQuery to parse the HTTP response log data in Cloud Logging for the current month and sends an email if the size of all HTTP responses, multiplied by current Google Cloud egress prices, totals over 100 dollars. Schedule the Cloud Function using Cloud Scheduler to run hourly.
 
 **[⬆ Back to Top](#table-of-contents)**
 
 ### You have designed a solution on Google Cloud that uses multiple Google Cloud products. Your company has asked you to estimate the costs of the solution. You need to provide estimates for the monthly total cost. What should you do?
 
-- [ ] For each Google Cloud product in the solution, review the pricing details on the products pricing page. Use the pricing calculator to total the monthly costs for each Google Cloud product.
+- [x] For each Google Cloud product in the solution, review the pricing details on the products pricing page. Use the pricing calculator to total the monthly costs for each Google Cloud product.
 - [ ] For each Google Cloud product in the solution, review the pricing details on the products pricing page. Create a Google Sheet that summarizes the expected monthly costs for each product.
 - [ ] Provision the solution on Google Cloud. Leave the solution provisioned for 1 week. Navigate to the Billing Report page in the Cloud Console. Multiply the 1 week cost to determine the monthly costs.
 - [ ] Provision the solution on Google Cloud. Leave the solution provisioned for 1 week. Use Cloud Monitoring to determine the provisioned and used resource amounts. Multiply the 1 week cost to determine the monthly costs.
@@ -1440,7 +1440,7 @@ We are so thankful for every contribution, which makes sure we can deliver top-n
 
 - [ ] HTTPS Load Balancer.
 - [ ] Network Load Balancer.
-- [ ] SSL Proxy Load Balancer.
+- [x] SSL Proxy Load Balancer.
 - [ ] Internal TCP/UDP Load Balancer. Add a firewall rule allowing ingress traffic from 0.0.0.0/0 on the target instances.
 
 **[⬆ Back to Top](#table-of-contents)**
@@ -1449,14 +1449,14 @@ We are so thankful for every contribution, which makes sure we can deliver top-n
 
 - [ ] Increase the size of the disk to 1 TB.
 - [ ] Increase the allocated CPU to the instance.
-- [ ] Migrate to use a Local SSD on the instance.
+- [x] Migrate to use a Local SSD on the instance.
 - [ ] Migrate to use a Regional SSD on the instance.
 
 **[⬆ Back to Top](#table-of-contents)**
 
 ### Your Dataproc cluster runs in a single Virtual Private Cloud (VPC) network in a single subnet with range 172.16.20.128/25. There are no private IP addresses available in the VPC network. You want to add new VMs to communicate with your cluster using the minimum number of steps. What should you do?
 
-- [ ] Modify the existing subnet range to 172.16.20.0/24.
+- [x] Modify the existing subnet range to 172.16.20.0/24.
 - [ ] Create a new Secondary IP Range in the VPC and configure the VMs to use that range.
 - [ ] Create a new VPC network for the VMs. Enable VPC Peering between the VMs' VPC network and the Dataproc cluster VPC network.
 - [ ] Create a new VPC network for the VMs with a subnet of 172.32.0.0/16. Enable VPC network Peering between the Dataproc VPC network and the VMs VPC network. Configure a custom Route exchange.
@@ -1466,7 +1466,7 @@ We are so thankful for every contribution, which makes sure we can deliver top-n
 ### You manage an App Engine Service that aggregates and visualizes data from BigQuery. The application is deployed with the default App Engine Service account. The data that needs to be visualized resides in a different project managed by another team. You do not have access to this project, but you want your application to be able to read data from the BigQuery dataset. What should you do?
 
 - [ ] Ask the other team to grant your default App Engine Service account the role of BigQuery Job User.
-- [ ] Ask the other team to grant your default App Engine Service account the role of BigQuery Data Viewer.
+- [x] Ask the other team to grant your default App Engine Service account the role of BigQuery Data Viewer.
 - [ ] In Cloud IAM of your project, ensure that the default App Engine service account has the role of BigQuery Data Viewer.
 - [ ] In Cloud IAM of your project, grant a newly created service account from the other team the role of BigQuery Job User in your project.
 
@@ -1477,7 +1477,7 @@ We are so thankful for every contribution, which makes sure we can deliver top-n
 - [ ] Create a Compute Engine snapshot of your base VM. Create your images from that snapshot.
 - [ ] Create a Compute Engine snapshot of your base VM. Create your instances from that snapshot.
 - [ ] Create a custom Compute Engine image from a snapshot. Create your images from that image.
-- [ ] Create a custom Compute Engine image from a snapshot. Create your instances from that image.
+- [x] Create a custom Compute Engine image from a snapshot. Create your instances from that image.
 
 **[⬆ Back to Top](#table-of-contents)**
 
@@ -1486,14 +1486,14 @@ We are so thankful for every contribution, which makes sure we can deliver top-n
 - [ ] Navigate to Cloud Logging and view the application logs.
 - [ ] Connect to the instance's serial console and read the application logs.
 - [ ] Configure a Health Check on the instance and set a Low Healthy Threshold value.
-- [ ] Install and configure the Cloud Logging Agent and view the logs from Cloud Logging.
+- [x] Install and configure the Cloud Logging Agent and view the logs from Cloud Logging.
 
 **[⬆ Back to Top](#table-of-contents)**
 
 ### An application generates daily reports in a Compute Engine Virtual Machine (VM). The VM is in the project corp-iot-insights. Your team operates only in the project corp-aggregate-reports and needs a copy of the daily exports in the bucket corp-aggregate-reports-storage. You want to configure access so that the daily reports from the VM are available in the bucket corp-aggregate-reports-storage and use as few steps as possible while following Google-recommended practices. What should you do?
 
 - [ ] Move both projects under the same folder.
-- [ ] Grant the VM Service Account the role Storage Object Creator on corp-aggregate-reports-storage.
+- [x] Grant the VM Service Account the role Storage Object Creator on corp-aggregate-reports-storage.
 - [ ] Create a Shared VPC network between both projects. Grant the VM Service Account the role Storage Object Creator on corp-iot-insights.
 - [ ] Make corp-aggregate-reports-storage public and create a folder with a pseudo-randomized suffix name. Share the folder with the IoT team.
 
@@ -1501,7 +1501,7 @@ We are so thankful for every contribution, which makes sure we can deliver top-n
 
 ### You built an application on your development laptop that uses Google Cloud services. Your application uses Application Default Credentials for authentication and works fine on your development laptop. You want to migrate this application to a Compute Engine Virtual Machine (VM) and set up authentication using Google-recommended practices and minimal changes. What should you do?
 
-- [ ] Assign appropriate access for Google services to the service account used by the Compute Engine VM.
+- [x] Assign appropriate access for Google services to the service account used by the Compute Engine VM.
 - [ ] Create a service account with appropriate access for Google services, and configure the application to use this account.
 - [ ] Store credentials for service accounts with appropriate access for Google services in a config file, and deploy this config file with your application.
 - [ ] Store credentials for your user account with appropriate access for Google services in a config file, and deploy this config file with your application.
@@ -1510,7 +1510,7 @@ We are so thankful for every contribution, which makes sure we can deliver top-n
 
 ### You need to create a Compute Engine instance in a new project that doesn't exist yet. What should you do?
 
-- [ ] Using the Cloud SDK, create a new project, enable the Compute Engine API in that project, and then create the instance specifying your new project.
+- [x] Using the Cloud SDK, create a new project, enable the Compute Engine API in that project, and then create the instance specifying your new project.
 - [ ] Enable the Compute Engine API in the Cloud Console, use the Cloud SDK to create the instance, and then use the --project flag to specify a new project.
 - [ ] Using the Cloud SDK, create the new instance, and use the --project flag to specify the new project. Answer yes when prompted by Cloud SDK to enable the Compute Engine API.
 - [ ] Enable the Compute Engine API in the Cloud Console. Go to the Compute Engine section of the Console to create a new instance, and look for the Create In A New Project option in the creation form.
@@ -1521,14 +1521,14 @@ We are so thankful for every contribution, which makes sure we can deliver top-n
 
 - [ ] Migrate the workload to a Compute Engine Preemptible VM.
 - [ ] Migrate the workload to a Google Kubernetes Engine cluster with Preemptible nodes.
-- [ ] Migrate the workload to a Compute Engine VM. Start and stop the instance as needed.
+- [x] Migrate the workload to a Compute Engine VM. Start and stop the instance as needed.
 - [ ] Create an Instance Template with Preemptible VMs On. Create a Managed Instance Group from the template and adjust Target CPU Utilization. Migrate the workload.
 
 **[⬆ Back to Top](#table-of-contents)**
 
 ### You are developing a new application and are looking for a Jenkins installation to build and deploy your source code. You want to automate the installation as quickly and easily as possible. What should you do?
 
-- [ ] Deploy Jenkins through the Google Cloud Marketplace.
+- [x] Deploy Jenkins through the Google Cloud Marketplace.
 - [ ] Create a new Compute Engine instance. Run the Jenkins executable.
 - [ ] Create a new Kubernetes Engine cluster. Create a deployment for the Jenkins image.
 - [ ] Create an instance template with the Jenkins executable. Create a Managed Instance Group with this template.
@@ -1537,7 +1537,7 @@ We are so thankful for every contribution, which makes sure we can deliver top-n
 
 ### You have downloaded and installed the gcloud command line interface (CLI) and have authenticated with your Google Account. Most of your Compute Engine instances in your project run in the europe-west1-d zone. You want to avoid having to specify this zone with each CLI command when managing these instances. What should you do?
 
-- [ ] Set the europe-west1-d zone as the default zone using the gcloud config subcommand.
+- [x] Set the europe-west1-d zone as the default zone using the gcloud config subcommand.
 - [ ] In the Settings page for Compute Engine under Default location, set the zone to europe-west1-d.
 - [ ] In the CLI installation directory, create a file called default.conf containing zone=europe-west1-d.
 - [ ] Create a Metadata entry on the Compute Engine page with key compute/zone and value europe-west1-d.
@@ -1549,7 +1549,7 @@ We are so thankful for every contribution, which makes sure we can deliver top-n
 - [ ] Create a file in Cloud Storage per device and append new data to that file.
 - [ ] Create a file in Cloud Filestore per device and append new data to that file.
 - [ ] Ingest the data into Datastore. Store data in an entity group based on the device.
-- [ ] Ingest the data into Cloud Bigtable. Create a row key based on the event timestamp.
+- [x] Ingest the data into Cloud Bigtable. Create a row key based on the event timestamp.
 
 **[⬆ Back to Top](#table-of-contents)**
 
@@ -1558,13 +1558,13 @@ We are so thankful for every contribution, which makes sure we can deliver top-n
 - [ ] Enable API and then share charts from project A, B, and C.
 - [ ] Enable API and then give the metrics.reader role to projects A, B, and C.
 - [ ] Enable API and then use default dashboards to view all projects in sequence.
-- [ ] Enable API, create a workspace under project A, and then add projects B and C.
+- [x] Enable API, create a workspace under project A, and then add projects B and C.
 
 **[⬆ Back to Top](#table-of-contents)**
 
 ### You created several resources in multiple Google Cloud projects. All projects are linked to different billing accounts. To better estimate future charges, you want to have a single visual representation of all costs incurred. You want to include new cost data as soon as possible. What should you do?
 
-- [ ] Configure Billing Data Export to BigQuery and visualize the data in Data Studio.
+- [x] Configure Billing Data Export to BigQuery and visualize the data in Data Studio.
 - [ ] Visit the Cost Table page to get a CSV export and visualize it using Data Studio.
 - [ ] Fill all resources in the Pricing Calculator to get an estimate of the monthly cost.
 - [ ] Use the Reports view in the Cloud Billing Console to view the desired cost information.
@@ -1573,7 +1573,7 @@ We are so thankful for every contribution, which makes sure we can deliver top-n
 
 ### Your company has workloads running on Compute Engine and on-premises. The Google Cloud Virtual Private Cloud (VPC) is connected to your WAN over a Virtual Private Network (VPN). You need to deploy a new Compute Engine instance and ensure that no public Internet traffic can be routed to it. What should you do?
 
-- [ ] Create the instance without a public IP address.
+- [x] Create the instance without a public IP address.
 - [ ] Create the instance with Private Google Access enabled.
 - [ ] Create a deny-all egress firewall rule on the VPC network.
 - [ ] Create a route on the VPC to route all traffic to the instance over the VPN tunnel.
@@ -1583,7 +1583,7 @@ We are so thankful for every contribution, which makes sure we can deliver top-n
 ### Your team maintains the infrastructure for your organization. The current infrastructure requires changes. You need to share your proposed changes with the rest of the team. You want to follow Google's recommended best practices. What should you do?
 
 - [ ] Use Deployment Manager templates to describe the proposed changes and store them in a Cloud Storage bucket.
-- [ ] Use Deployment Manager templates to describe the proposed changes and store them in Cloud Source Repositories.
+- [x] Use Deployment Manager templates to describe the proposed changes and store them in Cloud Source Repositories.
 - [ ] Apply the changes in a development environment, run gcloud compute instances list, and then save the output in a shared Storage bucket.
 - [ ] Apply the changes in a development environment, run gcloud compute instances list, and then save the output in Cloud Source Repositories.
 
@@ -1592,7 +1592,7 @@ We are so thankful for every contribution, which makes sure we can deliver top-n
 ### You have a Compute Engine instance hosting an application used between 9 AM and 6 PM on weekdays. You want to back up this instance daily for disaster recovery purposes. You want to keep the backups for 30 days. You want the Google-recommended solution with the least management overhead and the least number of services. What should you do?
 
 - [ ] 1. Update your instances' metadata to add the following value: snapshot-schedule: 0 1 * * * 2. Update your instances' metadata to add the following value: snapshot-retention: 30.
-- [ ] 1. In the Cloud Console, go to the Compute Engine Disks page and select your instance's disk. 2. In the Snapshot Schedule section, select Create Schedule and configure the following parameters: Schedule frequency: Daily. Start time: 1:00 AM - 2:00 AM. Autodelete snapshots after: 30 days.
+- [x] 1. In the Cloud Console, go to the Compute Engine Disks page and select your instance's disk. 2. In the Snapshot Schedule section, select Create Schedule and configure the following parameters: Schedule frequency: Daily. Start time: 1:00 AM - 2:00 AM. Autodelete snapshots after: 30 days.
 - [ ] 1. Create a Cloud Function that creates a snapshot of your instance's disk. 2. Create a Cloud Function that deletes snapshots that are older than 30 days. 3. Use Cloud Scheduler to trigger both Cloud Functions daily at 1:00 AM.
 - [ ] 1. Create a bash script in the instance that copies the content of the disk to Cloud Storage. 2. Create a bash script in the instance that deletes data older than 30 days in the backup Cloud Storage bucket. 3. Configure the instance's crontab to execute these scripts daily at 1:00 AM.
 
