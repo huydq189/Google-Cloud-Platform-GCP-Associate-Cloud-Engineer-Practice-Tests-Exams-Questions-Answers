@@ -1166,7 +1166,7 @@ We are so thankful for every contribution, which makes sure we can deliver top-n
 
 - [ ] Use Binary Authorization and whitelist only the container images used by your customers' Pods.
 - [ ] Use the Container Analysis API to detect vulnerabilities in the containers used by your customers' Pods.
-- [ ] Create a GKE node pool with a sandbox type configured to gvisor. Add the parameter runtimeClassName: gvisor to the specification of your customers' Pods.
+- [x] Create a GKE node pool with a sandbox type configured to gvisor. Add the parameter runtimeClassName: gvisor to the specification of your customers' Pods.
 - [ ] Use the cos_containerd image for your GKE nodes. Add a nodeSelector with the value cloud.google.com/gke-os-distribution: cos_containerd to the specification of your customers' Pods.
 
 **[⬆ Back to Top](#table-of-contents)**
@@ -1177,7 +1177,7 @@ We are so thankful for every contribution, which makes sure we can deliver top-n
 
 - [ ] Remove the profile_picture field from the table.
 - [ ] Add a secondary index on the person_id column.
-- [ ] Change the primary key to not have monotonically increasing values.
+- [x] Change the primary key to not have monotonically increasing values.
 - [ ] Create a secondary index using the following Data Definition Language (DDL):
 
 ![DDL](images/ddl.png)
@@ -1188,7 +1188,7 @@ We are so thankful for every contribution, which makes sure we can deliver top-n
 
 - [ ] Add the group for the finance team to roles/billing user role.
 - [ ] Add the group for the finance team to roles/billing admin role.
-- [ ] Add the group for the finance team to roles/billing viewer role.
+- [x] Add the group for the finance team to roles/billing viewer role.
 - [ ] Add the group for the finance team to roles/billing project/Manager role.
 
 **[⬆ Back to Top](#table-of-contents)**
@@ -1198,7 +1198,7 @@ We are so thankful for every contribution, which makes sure we can deliver top-n
 - [ ] Add your SREs to roles/iam.roleAdmin role.
 - [ ] Add your SREs to roles/accessapproval.approver role.
 - [ ] Add your SREs to a group and then add this group to roles/iam.roleAdmin.role.
-- [ ] Add your SREs to a group and then add this group to roles/accessapproval.approver role.
+- [x] Add your SREs to a group and then add this group to roles/accessapproval.approver role.
 
 **[⬆ Back to Top](#table-of-contents)**
 
@@ -1207,7 +1207,7 @@ We are so thankful for every contribution, which makes sure we can deliver top-n
 - [ ] Use a Shielded VM.
 - [ ] Use a Preemptible VM.
 - [ ] Use a sole-tenant node.
-- [ ] Enable deletion protection on the instance.
+- [x] Enable deletion protection on the instance.
 
 **[⬆ Back to Top](#table-of-contents)**
 
@@ -1216,7 +1216,7 @@ We are so thankful for every contribution, which makes sure we can deliver top-n
 - [ ] Add users to roles/bigquery user role only, instead of roles/bigquery dataOwner.
 - [ ] Add users to roles/bigquery dataEditor role only, instead of roles/bigquery dataOwner.
 - [ ] Create a custom role by removing delete permissions, and add users to that role only.
-- [ ] Create a custom role by removing delete permissions. Add users to the group, and then add the group to the custom role.
+- [x] Create a custom role by removing delete permissions. Add users to the group, and then add the group to the custom role.
 
 **[⬆ Back to Top](#table-of-contents)**
 
@@ -1224,7 +1224,7 @@ We are so thankful for every contribution, which makes sure we can deliver top-n
 
 - [ ] Export Cloud Datastore data using gcloud datastore export.
 - [ ] Create a Cloud Datastore index using gcloud datastore indexes create.
-- [ ] Install the google-cloud-sdk-datastore-emulator component using the apt get install command.
+- [x] Install the google-cloud-sdk-datastore-emulator component using the apt get install command.
 - [ ] Install the cloud-datastore-emulator component using the gcloud components install command.
 
 **[⬆ Back to Top](#table-of-contents)**
@@ -1233,7 +1233,7 @@ We are so thankful for every contribution, which makes sure we can deliver top-n
 
 - [ ] Add the users to roles/browser role.
 - [ ] Add the users to roles/iam.roleViewer role.
-- [ ] Add the users to a group, and add this group to roles/browser.
+- [x] Add the users to a group, and add this group to roles/browser.
 - [ ] Add the users to a group, and add this group to roles/iam.roleViewer role.
 
 **[⬆ Back to Top](#table-of-contents)**
@@ -1241,7 +1241,7 @@ We are so thankful for every contribution, which makes sure we can deliver top-n
 ### Your company has a single sign-on (SSO) identity provider that supports Security Assertion Markup Language (SAML) integration with service providers. Your company has users in Cloud Identity. You would like users to authenticate using your company's SSO provider. What should you do?
 
 - [ ] In Cloud Identity, set up SSO with Google as an identity provider to access custom SAML apps.
-- [ ] In Cloud Identity, set up SSO with a third-party identity provider with Google as a service provider.
+- [x] In Cloud Identity, set up SSO with a third-party identity provider with Google as a service provider.
 - [ ] Obtain OAuth 2.0 credentials, configure the user consent screen, and set up OAuth 2.0 for Mobile &amp; Desktop Apps.
 - [ ] Obtain OAuth 2.0 credentials, configure the user consent screen, and set up OAuth 2.0 for Web Server Applications.
 
@@ -1252,14 +1252,14 @@ We are so thankful for every contribution, which makes sure we can deliver top-n
 - [ ] Add the user to roles/iam.roleAdmin role.
 - [ ] Add the user to roles/iam.securityAdmin role.
 - [ ] Add the user to roles/iam.serviceAccountUser role.
-- [ ] Add the user to roles/iam.serviceAccountAdmin role.
+- [x] Add the user to roles/iam.serviceAccountAdmin role.
 
 **[⬆ Back to Top](#table-of-contents)**
 
 ### You are building an archival solution for your data warehouse and have selected Cloud Storage to archive your data. Your users need to be able to access this archived data once a quarter for some regulatory requirements. You want to select a cost-efficient option. Which storage option should you use?
 
 - [ ] Cold Storage.
-- [ ] Nearline Storage.
+- [x] Nearline Storage.
 - [ ] Regional Storage.
 - [ ] Multi-Regional Storage.
 
@@ -1269,14 +1269,14 @@ We are so thankful for every contribution, which makes sure we can deliver top-n
 
 - [ ] Enable node auto-provisioning on the GKE cluster.
 - [ ] Create a VerticalPodAutscaler for those workloads.
-- [ ] Create a node pool with preemptible VMs and GPUs attached to those VMs.
+- [x] Create a node pool with preemptible VMs and GPUs attached to those VMs.
 - [ ] Create a node pool of instances with GPUs, and enable autoscaling on this node pool with a minimum size of 1.
 
 **[⬆ Back to Top](#table-of-contents)**
 
 ### Your organization has user identities in Active Directory. Your organization wants to use Active Directory as their source of truth for identities. Your organization wants to have full control over the Google accounts used by employees for all Google services, including your Google Cloud Platform (GCP) organization. What should you do?
 
-- [ ] Use Google Cloud Directory Sync (GCDS) to synchronize users into Cloud Identity.
+- [x] Use Google Cloud Directory Sync (GCDS) to synchronize users into Cloud Identity.
 - [ ] Use the cloud Identity APIs and write a script to synchronize users to Cloud Identity.
 - [ ] Export users from Active Directory as a CSV and import them to Cloud Identity via the Admin Console.
 - [ ] Ask each employee to create a Google account using self signup. Require that each employee use their company email address and password.
@@ -1285,7 +1285,7 @@ We are so thankful for every contribution, which makes sure we can deliver top-n
 
 ### You have successfully created a development environment in a project for an application. This application uses Compute Engine and Cloud SQL. Now you need to create a production environment for this application. The security team has forbidden the existence of network routes between these 2 environments and has asked you to follow Google-recommended practices. What should you do?
 
-- [ ] Create a new project, enable the Compute Engine and Cloud SQL APIs in that project, and replicate the setup you have created in the development environment.
+- [x] Create a new project, enable the Compute Engine and Cloud SQL APIs in that project, and replicate the setup you have created in the development environment.
 - [ ] Create a new production subnet in the existing VPC and a new production Cloud SQL instance in your existing project, and deploy your application using those resources.
 - [ ] Create a new project, modify your existing VPC to be a Shared VPC, share that VPC with your new project, and replicate the setup you have in the development environment in that new project in the Shared VP.
 - [ ] Ask the security team to grant you the Project Editor role in an existing production project used by another division of your company. Once they grant you that role, replicate the setup you have in the development environment in that project.
@@ -1296,7 +1296,7 @@ We are so thankful for every contribution, which makes sure we can deliver top-n
 
 - [ ] Ask the auditor for their Google account, and give them the Viewer role on the project.
 - [ ] Ask the auditor for their Google account, and give them the Security Reviewer role on the project.
-- [ ] Create a temporary account for the auditor in Cloud Identity, and give that account the Viewer role on the project.
+- [x] Create a temporary account for the auditor in Cloud Identity, and give that account the Viewer role on the project.
 - [ ] Create a temporary account for the auditor in Cloud Identity, and give that account the Security Reviewer role on the project.
 
 **[⬆ Back to Top](#table-of-contents)**
@@ -1304,7 +1304,7 @@ We are so thankful for every contribution, which makes sure we can deliver top-n
 ### You have a workload running on Compute Engine that is critical to your business. You want to ensure that the data on the boot disk of this workload is backed up regularly. You need to be able to restore a backup as quickly as possible in case of disaster. You also want older backups to be cleaned automatically to save on cost. You want to follow Google-recommended practices. What should you do?
 
 - [ ] Create a Cloud Function to create an instance template.
-- [ ] Create a snapshot schedule for the disk using the desired interval.
+- [x] Create a snapshot schedule for the disk using the desired interval.
 - [ ] Create a cron job to create a new disk from the disk using gcloud.
 - [ ] Create a Cloud Task to create an image and export it to Cloud Storage.
 
@@ -1313,7 +1313,7 @@ We are so thankful for every contribution, which makes sure we can deliver top-n
 ### You need to assign a Cloud Identity and Access Management (Cloud IAM) role to an external auditor. The auditor needs to have permissions to review your Google Cloud Platform (GCP) Audit Logs and also to review your Data Access logs. What should you do?
 
 - [ ] Assign the auditor the IAM role roles/logging.privateLogViewer. Perform the export of logs to Cloud Storage.
-- [ ] Assign the auditor the IAM role roles/logging.privateLogViewer. Direct the auditor to also review the logs for changes to Cloud IAM policy.
+- [x] Assign the auditor the IAM role roles/logging.privateLogViewer. Direct the auditor to also review the logs for changes to Cloud IAM policy.
 - [ ] Assign the auditor's IAM user to a custom role that has logging.privateLogEntries.list permission. Perform the export of logs to Cloud Storage.
 - [ ] Assign the auditor's IAM user to a custom role that has logging.privateLogEntries.list permission. Direct the auditor to also review the logs for changes to Cloud IAM policy.
 
@@ -1322,7 +1322,7 @@ We are so thankful for every contribution, which makes sure we can deliver top-n
 ### You are managing several Google Cloud Platform (GCP) projects and need access to all logs for the past 60 days. You want to be able to explore and quickly analyze the log contents. You want to follow Google-recommended practices to obtain the combined logs for all projects. What should you do?
 
 - [ ] Navigate to Stackdriver Logging and select resource.labels.project_id="*".
-- [ ] Create a Stackdriver Logging Export with a Sink destination to a BigQuery dataset. Configure the table expiration to 60 days.
+- [x] Create a Stackdriver Logging Export with a Sink destination to a BigQuery dataset. Configure the table expiration to 60 days.
 - [ ] Create a Stackdriver Logging Export with a Sink destination to Cloud Storage. Create a lifecycle rule to delete objects after 60 days.
 - [ ] Configure a Cloud Scheduler job to read from Stackdriver and store the logs in BigQuery. Configure the table expiration to 60 days.
 
@@ -1332,7 +1332,7 @@ We are so thankful for every contribution, which makes sure we can deliver top-n
 
 - [ ] 1. Verify that you are assigned the Project Owners IAM role for this project. 2. Locate the project in the GCP console, click Shut down and then enter the project I.
 - [ ] 1. Verify that you are assigned the Project Owners IAM role for this project. 2. Switch to the project in the GCP console, locate the resources and delete them.
-- [ ] 1. Verify that you are assigned the Organizational Administrator IAM role for this project. 2. Locate the project in the GCP console, enter the project ID and then click Shut down.
+- [x] 1. Verify that you are assigned the Organizational Administrator IAM role for this project. 2. Locate the project in the GCP console, enter the project ID and then click Shut down.
 - [ ] 1. Verify that you are assigned the Organizational Administrators IAM role for this project. 2. Switch to the project in the GCP console, locate the resources and delete them.
 
 **[⬆ Back to Top](#table-of-contents)**
@@ -1342,7 +1342,7 @@ We are so thankful for every contribution, which makes sure we can deliver top-n
 - [ ] Give project owner for web-applications appropriate roles to crm-databases-proj.
 - [ ] Give project owner role to crm-databases-proj and the web-applications project.
 - [ ] Give project owner role to crm-databases-proj and bigquery.dataViewer role to web-applications.
-- [ ] Give bigquery.dataViewer role to crm-databases-proj and appropriate roles to web-applications.
+- [x] Give bigquery.dataViewer role to crm-databases-proj and appropriate roles to web-applications.
 
 **[⬆ Back to Top](#table-of-contents)**
 
@@ -1350,14 +1350,14 @@ We are so thankful for every contribution, which makes sure we can deliver top-n
 
 - [ ] View System Event Logs in Stackdriver. Search for the user's email as the principal.
 - [ ] View System Event Logs in Stackdriver. Search for the service account associated with the user.
-- [ ] View Data Access audit logs in Stackdriver. Search for the user's email as the principal.
+- [x] View Data Access audit logs in Stackdriver. Search for the user's email as the principal.
 - [ ] View the Admin Activity log in Stackdriver. Search for the service account associated with the user.
 
 **[⬆ Back to Top](#table-of-contents)**
 
 ### You need to create a custom IAM role for use with a GCP service. All permissions in the role must be suitable for production use. You also want to clearly share with your organization the status of the custom role. This will be the first version of the custom role. What should you do?
 
-- [ ] Use permissions in your role that use the 'supported' support level for role permissions. Set the role stage to ALPHA while testing the role permissions.
+- [x] Use permissions in your role that use the 'supported' support level for role permissions. Set the role stage to ALPHA while testing the role permissions.
 - [ ] Use permissions in your role that use the 'supported' support level for role permissions. Set the role stage to BETA while testing the role permissions.
 - [ ] Use permissions in your role that use the 'testing' support level for role permissions. Set the role stage to ALPHA while testing the role permissions.
 - [ ] Use permissions in your role that use the 'testing' support level for role permissions. Set the role stage to BETA while testing the role permissions.
@@ -1367,7 +1367,7 @@ We are so thankful for every contribution, which makes sure we can deliver top-n
 ### Your company has a large quantity of unstructured data in different file formats. You want to perform ETL transformations on the data. You need to make the data accessible on Google Cloud so it can be processed by a Dataflow job. What should you do?
 
 - [ ] Upload the data to BigQuery using the bq command line tool.
-- [ ] Upload the data to Cloud Storage using the gsutil command line tool.
+- [x] Upload the data to Cloud Storage using the gsutil command line tool.
 - [ ] Upload the data into Cloud SQL using the import function in the console.
 - [ ] Upload the data into Cloud Spanner using the import function in the console.
 
@@ -1375,7 +1375,7 @@ We are so thankful for every contribution, which makes sure we can deliver top-n
 
 ### You need to manage multiple Google Cloud projects in the fewest steps possible. You want to configure the Google Cloud SDK command line interface (CLI) so that you can easily manage multiple projects. What should you do?
 
-- [ ] 1. Create a configuration for each project you need to manage. 2. Activate the appropriate configuration when you work with each of your assigned Google Cloud projects.
+- [x] 1. Create a configuration for each project you need to manage. 2. Activate the appropriate configuration when you work with each of your assigned Google Cloud projects.
 - [ ] 1. Create a configuration for each project you need to manage. 2. Use gcloud init to update the configuration values when you need to work with a non-default project.
 - [ ] 1. Use the default configuration for one project you need to manage. 2. Activate the appropriate configuration when you work with each of your assigned Google Cloud projects.
 - [ ] 1. Use the default configuration for one project you need to manage. 2. Use gcloud init to update the configuration values when you need to work with a non-default project.
@@ -1384,7 +1384,7 @@ We are so thankful for every contribution, which makes sure we can deliver top-n
 
 ### Your Managed Instance Group raised an alert stating that new instance creation has failed to create new instances. You need to maintain the number of running instances specified by the template to be able to process expected application traffic. What should you do?
 
-- [ ] Create an instance template that contains valid syntax which will be used by the instance group. Delete any persistent disks with the same name as instance names.
+- [x] Create an instance template that contains valid syntax which will be used by the instance group. Delete any persistent disks with the same name as instance names.
 - [ ] Create an instance template that contains valid syntax that will be used by the instance group. Verify that the instance name and persistent disk name values are not the same in the template.
 - [ ] Verify that the instance template being used by the instance group contains valid syntax. Delete any persistent disks with the same name as instance names. Set the disks.autoDelete property to true in the instance template.
 - [ ] Delete the current instance template and replace it with a new instance template. Verify that the instance name and persistent disk name values are not the same in the template. Set the disks.autoDelete property to true in the instance template.
@@ -1394,7 +1394,7 @@ We are so thankful for every contribution, which makes sure we can deliver top-n
 ### Your company is moving from an on-premises environment to Google Cloud. You have multiple development teams that use Cassandra environments as backend databases. They all need a development environment that is isolated from other Cassandra instances. You want to move to Google Cloud quickly and with minimal support effort. What should you do?
 
 - [ ] 1. Build an instruction guide to install Cassandra on Google Cloud. 2. Make the instruction guide accessible to your developers.
-- [ ] 1. Advise your developers to go to Cloud Marketplace. 2. Ask the developers to launch a Cassandra image for their development work.
+- [x] 1. Advise your developers to go to Cloud Marketplace. 2. Ask the developers to launch a Cassandra image for their development work.
 - [ ] 1. Build a Cassandra Compute Engine instance and take a snapshot of it. 2. Use the snapshot to create instances for your developers.
 - [ ] 1. Build a Cassandra Compute Engine instance and take a snapshot of it. 2. Upload the snapshot to Cloud Storage and make it accessible to your developers. 3. Build instructions to create a Compute Engine instance from the snapshot so that developers can do it themselves.
 
