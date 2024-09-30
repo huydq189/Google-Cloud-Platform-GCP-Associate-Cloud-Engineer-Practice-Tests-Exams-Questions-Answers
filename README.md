@@ -1601,7 +1601,48 @@ We are so thankful for every contribution, which makes sure we can deliver top-n
 ### Your existing application running in Google Kubernetes Engine (GKE) consists of multiple pods running on four GKE n1-standard-2 nodes. You need to deploy additional pods requiring n2-highmem-16 nodes without any downtime. What should you do?
 
 - [ ] Use gcloud container clusters upgrade. Deploy the new services.
-- [ ] Create a new Node Pool and specify machine type n2-highmem-16. Deploy the new pods.
+- [xto Top](#table-of-contents)**
+
+### You created several resources in multiple Google Cloud projects. All projects are linked to different billing accounts. To better estimate future charges, you want to have a single visual representation of all costs incurred. You want to include new cost data as soon as possible. What should you do?
+
+- [x] Configure Billing Data Export to BigQuery and visualize the data in Data Studio.
+- [ ] Visit the Cost Table page to get a CSV export and visualize it using Data Studio.
+- [ ] Fill all resources in the Pricing Calculator to get an estimate of the monthly cost.
+- [ ] Use the Reports view in the Cloud Billing Console to view the desired cost information.
+
+**[⬆ Back to Top](#table-of-contents)**
+
+### Your company has workloads running on Compute Engine and on-premises. The Google Cloud Virtual Private Cloud (VPC) is connected to your WAN over a Virtual Private Network (VPN). You need to deploy a new Compute Engine instance and ensure that no public Internet traffic can be routed to it. What should you do?
+
+- [x] Create the instance without a public IP address.
+- [ ] Create the instance with Private Google Access enabled.
+- [ ] Create a deny-all egress firewall rule on the VPC network.
+- [ ] Create a route on the VPC to route all traffic to the instance over the VPN tunnel.
+
+**[⬆ Back to Top](#table-of-contents)**
+
+### Your team maintains the infrastructure for your organization. The current infrastructure requires changes. You need to share your proposed changes with the rest of the team. You want to follow Google's recommended best practices. What should you do?
+
+- [ ] Use Deployment Manager templates to describe the proposed changes and store them in a Cloud Storage bucket.
+- [x] Use Deployment Manager templates to describe the proposed changes and store them in Cloud Source Repositories.
+- [ ] Apply the changes in a development environment, run gcloud compute instances list, and then save the output in a shared Storage bucket.
+- [ ] Apply the changes in a development environment, run gcloud compute instances list, and then save the output in Cloud Source Repositories.
+
+**[⬆ Back to Top](#table-of-contents)**
+
+### You have a Compute Engine instance hosting an application used between 9 AM and 6 PM on weekdays. You want to back up this instance daily for disaster recovery purposes. You want to keep the backups for 30 days. You want the Google-recommended solution with the least management overhead and the least number of services. What should you do?
+
+- [ ] 1. Update your instances' metadata to add the following value: snapshot-schedule: 0 1 * * * 2. Update your instances' metadata to add the following value: snapshot-retention: 30.
+- [x] 1. In the Cloud Console, go to the Compute Engine Disks page and select your instance's disk. 2. In the Snapshot Schedule section, select Create Schedule and configure the following parameters: Schedule frequency: Daily. Start time: 1:00 AM - 2:00 AM. Autodelete snapshots after: 30 days.
+- [ ] 1. Create a Cloud Function that creates a snapshot of your instance's disk. 2. Create a Cloud Function that deletes snapshots that are older than 30 days. 3. Use Cloud Scheduler to trigger both Cloud Functions daily at 1:00 AM.
+- [ ] 1. Create a bash script in the instance that copies the content of the disk to Cloud Storage. 2. Create a bash script in the instance that deletes data older than 30 days in the backup Cloud Storage bucket. 3. Configure the instance's crontab to execute these scripts daily at 1:00 AM.
+
+**[⬆ Back to Top](#table-of-contents)**
+
+### Your existing application running in Google Kubernetes Engine (GKE) consists of multiple pods running on four GKE n1-standard-2 nodes. You need to deploy additional pods requiring n2-highmem-16 nodes without any downtime. What should you do?
+
+- [ ] Use gcloud container clusters upgrade. Deploy the new services.
+- [x] Create a new Node Pool and specify machine type n2-highmem-16. Deploy the new pods.
 - [ ] Create a new cluster with n2-highmem-16 nodes. Redeploy the pods and delete the old cluster.
 - [ ] Create a new cluster with both n1-standard-2 and n2-highmem-16 nodes. Redeploy the pods and delete the old cluster.
 
@@ -1612,13 +1653,13 @@ We are so thankful for every contribution, which makes sure we can deliver top-n
 - [ ] Create a dataflow job that copies data from Cloud Bigtable and Cloud Storage for specific users.
 - [ ] Create a dataflow job that copies data from Cloud Bigtable and Cloud Spanner for specific users.
 - [ ] Create a Cloud Dataproc cluster that runs a Spark job to extract data from Cloud Bigtable and Cloud Storage for specific users.
-- [ ] Create two separate BigQuery external tables on Cloud Storage and Cloud Bigtable. Use the BigQuery console to join these tables through user fields, and apply appropriate filters.
+- [x] Create two separate BigQuery external tables on Cloud Storage and Cloud Bigtable. Use the BigQuery console to join these tables through user fields, and apply appropriate filters.
 
 **[⬆ Back to Top](#table-of-contents)**
 
 ### You are hosting an application from Compute Engine Virtual Machines (VMs) in us-central1-a. You want to adjust your design to support the failure of a single Compute Engine zone, eliminate downtime, and minimize cost. What should you do?
 
-- [ ] Create Compute Engine resources in us-central1-b. Balance the load across both us-central1-a and us-central1-b.
+- [x] Create Compute Engine resources in us-central1-b. Balance the load across both us-central1-a and us-central1-b.
 - [ ] Create a Managed Instance Group and specify us-central1-a as the zone. Configure the Health Check with a short Health Interval.
 - [ ] Create an HTTP(S) Load Balancer. Create one or more global forwarding rules to direct traffic to your VMs.
 - [ ] Perform regular backups of your application. Create a Cloud Monitoring Alert and be notified if your application becomes unavailable. Restore from backups when notified.
@@ -1630,7 +1671,7 @@ We are so thankful for every contribution, which makes sure we can deliver top-n
 - [ ] In the console, validate which SSH keys have been stored as project-wide keys.
 - [ ] Navigate to Identity-Aware Proxy and check the permissions for these resources.
 - [ ] Enable Audit Logs on the IAM &amp; admin page for all resources, and validate the results.
-- [ ] Use the command gcloud projects get-iam-policy to view the current role assignments.
+- [x] Use the command gcloud projects get-iam-policy to view the current role assignments.
 
 **[⬆ Back to Top](#table-of-contents)**
 
@@ -1639,13 +1680,13 @@ We are so thankful for every contribution, which makes sure we can deliver top-n
 - [ ] Create a new subnet in the same region as the subnet being used.
 - [ ] Add an alias IP range to the subnet used by the GKE clusters.
 - [ ] Create a new VPC, and set up VPC peering with the existing VP.
-- [ ] Expand the CIDR range of the relevant subnet for the cluster.
+- [x] Expand the CIDR range of the relevant subnet for the cluster.
 
 **[⬆ Back to Top](#table-of-contents)**
 
 ### You have a batch workload that runs every night and uses a large number of Virtual Machines (VMs). It is fault-tolerant and can tolerate some of the VMs being terminated. The current cost of VMs is too high. What should you do?
 
-- [ ] Run a test using simulated maintenance events. If the test is successful, use preemptible N1 Standard VMs when running future jobs.
+- [x] Run a test using simulated maintenance events. If the test is successful, use preemptible N1 Standard VMs when running future jobs.
 - [ ] Run a test using simulated maintenance events. If the test is successful, use N1 Standard VMs when running future jobs.
 - [ ] Run a test using a Managed Instance Group. If the test is successful, use N1 Standard VMs in the Managed Instance Group when running future jobs.
 - [ ] Run a test using N1 standard VMs instead of N2. If the test is successful, use N1 Standard VMs when running future jobs.
@@ -1654,7 +1695,7 @@ We are so thankful for every contribution, which makes sure we can deliver top-n
 
 ### You are working with a user to set up an application in a new VPC behind a firewall. The user is concerned about data egress. You want to configure the fewest open egress ports. What should you do?
 
-- [ ] Set up a low-priority (65534) rule that blocks all egress and a high-priority rule (1000) that allows only the appropriate ports.
+- [x] Set up a low-priority (65534) rule that blocks all egress and a high-priority rule (1000) that allows only the appropriate ports.
 - [ ] Set up a high-priority (1000) rule that pairs both ingress and egress ports.
 - [ ] Set up a high-priority (1000) rule that blocks all egress and a low-priority (65534) rule that allows only the appropriate ports.
 - [ ] Set up a high-priority (1000) rule to allow the appropriate ports.
@@ -1663,7 +1704,7 @@ We are so thankful for every contribution, which makes sure we can deliver top-n
 
 ### Your company runs its Linux workloads on Compute Engine instances. Your company will be working with a new operations partner that does not use Google Accounts. You need to grant access to the instances to your operations partner so they can maintain the installed tooling. What should you do?
 
-- [ ] Enable Cloud IAP for the Compute Engine instances, and add the operations partner as a Cloud IAP Tunnel User.
+- [x] Enable Cloud IAP for the Compute Engine instances, and add the operations partner as a Cloud IAP Tunnel User.
 - [ ] Tag all the instances with the same network tag. Create a firewall rule in the VPC to grant TCP access on port 22 for traffic from the operations partner to instances with the network tag.
 - [ ] Set up Cloud VPN between your Google Cloud VPC and the internal network of the operations partner.
 - [ ] Ask the operations partner to generate SSH key pairs, and add the public keys to the VM instances.
@@ -1673,7 +1714,7 @@ We are so thankful for every contribution, which makes sure we can deliver top-n
 ### You have created a code snippet that should be triggered whenever a new file is uploaded to a Cloud Storage bucket. You want to deploy this code snippet. What should you do?
 
 - [ ] Use App Engine and configure Cloud Scheduler to trigger the application using Pub/Sub.
-- [ ] Use Cloud Functions and configure the bucket as a trigger resource.
+- [x] Use Cloud Functions and configure the bucket as a trigger resource.
 - [ ] Use Google Kubernetes Engine and configure a CronJob to trigger the application using Pub/Sub.
 - [ ] Use Dataflow as a batch job, and configure the bucket as a data source.
 
@@ -1682,7 +1723,7 @@ We are so thankful for every contribution, which makes sure we can deliver top-n
 ### You have been asked to set up Object Lifecycle Management for objects stored in storage buckets. The objects are written once and accessed frequently for 30 days. After 30 days, the objects are not read again unless there is a special need. The objects should be kept for three years, and you need to minimize cost. What should you do?
 
 - [ ] Set up a policy that uses Nearline storage for 30 days and then moves to Archive storage for three years.
-- [ ] Set up a policy that uses Standard storage for 30 days and then moves to Archive storage for three years.
+- [x] Set up a policy that uses Standard storage for 30 days and then moves to Archive storage for three years.
 - [ ] Set up a policy that uses Nearline storage for 30 days, then moves the Coldline for one year, and then moves to Archive storage for two years.
 - [ ] Set up a policy that uses Standard storage for 30 days, then moves to Coldline for one year, and then moves to Archive storage for two years.
 
@@ -1693,7 +1734,7 @@ We are so thankful for every contribution, which makes sure we can deliver top-n
 - [ ] Enable the Identity Aware Proxy API on the project.
 - [ ] Scan the bucket using the Data Loss Prevention API.
 - [ ] Allow only a single Service Account access to read the data.
-- [ ] Enable Data Access audit logs for the Cloud Storage API.
+- [x] Enable Data Access audit logs for the Cloud Storage API.
 
 **[⬆ Back to Top](#table-of-contents)**
 
@@ -1701,7 +1742,7 @@ We are so thankful for every contribution, which makes sure we can deliver top-n
 
 - [ ] Create a single budget for all projects and configure budget alerts on this budget.
 - [ ] Create a separate billing account per sandbox project and enable BigQuery billing exports. Create a Data Studio dashboard to plot the spending per billing account.
-- [ ] Create a budget per project and configure budget alerts on all of these budgets.
+- [x] Create a budget per project and configure budget alerts on all of these budgets.
 - [ ] Create a single billing account for all sandbox projects and enable BigQuery billing exports. Create a Data Studio dashboard to plot the spending per project.
 
 **[⬆ Back to Top](#table-of-contents)**
@@ -1709,7 +1750,7 @@ We are so thankful for every contribution, which makes sure we can deliver top-n
 ### You are deploying a production application on Compute Engine. You want to prevent anyone from accidentally destroying the instance by clicking the wrong button. What should you do?
 
 - [ ] Disable the flag Delete boot disk when instance is deleted.
-- [ ] Enable delete protection on the instance.
+- [x] Enable delete protection on the instance.
 - [ ] Disable Automatic restart on the instance.
 - [ ] Enable Preemptibility on the instance.
 
@@ -1719,15 +1760,15 @@ We are so thankful for every contribution, which makes sure we can deliver top-n
 
 - [ ] Grant all members of the DevOps team the role of Project Editor on the organization level.
 - [ ] Grant all members of the DevOps team the role of Project Editor on the production project.
-- [ ] Create a custom role that combines the required permissions. Grant the DevOps team the custom role on the production project.
+- [x] Create a custom role that combines the required permissions. Grant the DevOps team the custom role on the production project.
 - [ ] Create a custom role that combines the required permissions. Grant the DevOps team the custom role on the organization level.
 
 **[⬆ Back to Top](#table-of-contents)**
 
 ### You are building an application that processes data files uploaded from thousands of suppliers. Your primary goals for the application are data security and the expiration of aged data. You need to design the application to: Restrict access so that suppliers can access only their own data. Give suppliers write access to data only for 30 minutes. Delete data that is over 45 days old. You have a very short development cycle, and you need to make sure that the application requires minimal maintenance. Which two strategies should you use? (Choose two.)
 
-- [ ] Build a lifecycle policy to delete Cloud Storage objects after 45 days.
-- [ ] Use signed URLs to allow suppliers limited time access to store their objects.
+- [x] Build a lifecycle policy to delete Cloud Storage objects after 45 days.
+- [x] Use signed URLs to allow suppliers limited time access to store their objects.
 - [ ] Set up an SFTP server for your application, and create a separate user for each supplier.
 - [ ] Build a Cloud function that triggers a timer of 45 days to delete objects that have expired.
 - [ ] Develop a script that loops through all Cloud Storage buckets and deletes any buckets that are older than 45 days.
@@ -1736,7 +1777,7 @@ We are so thankful for every contribution, which makes sure we can deliver top-n
 
 ### Your company wants to standardize the creation and management of multiple Google Cloud resources using Infrastructure as Code. You want to minimize the amount of repetitive code needed to manage the environment. What should you do?
 
-- [ ] Develop templates for the environment using Cloud Deployment Manager.
+- [x] Develop templates for the environment using Cloud Deployment Manager.
 - [ ] Use curl in a terminal to send a REST request to the relevant Google API for each individual resource.
 - [ ] Use the Cloud Console interface to provision and manage all related resources.
 - [ ] Create a bash script that contains all requirement steps as gcloud commands.
@@ -1746,7 +1787,7 @@ We are so thankful for every contribution, which makes sure we can deliver top-n
 ### You are performing a monthly security check of your Google Cloud environment and want to know who has access to view data stored in your Google Cloud Project. What should you?
 
 - [ ] Enable Audit Logs for all APIs that are related to data storage.
-- [ ] Review the IAM permissions for any role that allows for data access.
+- [x] Review the IAM permissions for any role that allows for data access.
 - [ ] Review the Identity-Aware Proxy settings for each resource.
 - [ ] Create a Data Loss Prevention job.
 
@@ -1755,7 +1796,7 @@ We are so thankful for every contribution, which makes sure we can deliver top-n
 ### Your company has embraced a hybrid cloud strategy where some of the applications are deployed on Google Cloud. A Virtual Private Network (VPN) tunnel connects your Virtual Private Cloud (VPC) in Google Cloud with your company's on-premises network. Multiple applications in Google Cloud need to connect to an on-premises database server, and you want to avoid having to change the IP configuration in all of your applications when the IP of the database changes. What should you do?
 
 - [ ] Configure Cloud NAT for all subnets of your VPC to be used when egressing from the VM instances.
-- [ ] Create a private zone on Cloud DNS, and configure the applications with the DNS name.
+- [x] Create a private zone on Cloud DNS, and configure the applications with the DNS name.
 - [ ] Configure the IP of the database as custom metadata for each instance, and query the metadata server.
 - [ ] Query the Compute Engine internal DNS from the applications to retrieve the IP of the database.
 
@@ -1764,7 +1805,7 @@ We are so thankful for every contribution, which makes sure we can deliver top-n
 ### You have developed a containerized web application that will serve internal colleagues during business hours. You want to ensure that no costs are incurred outside of the hours the application is used. You have just created a new Google Cloud project and want to deploy the application. What should you do?
 
 - [ ] Deploy the container on Cloud Run for Anthos, and set the minimum number of instances to zero.
-- [ ] Deploy the container on Cloud Run (fully managed), and set the minimum number of instances to zero.
+- [x] Deploy the container on Cloud Run (fully managed), and set the minimum number of instances to zero.
 - [ ] Deploy the container on App Engine flexible environment with autoscaling, and set the value min_instances to zero in the app.yaml.
 - [ ] Deploy the container on App Engine flexible environment with manual scaling, and set the value instances to zero in the app.yaml.
 
@@ -1775,7 +1816,7 @@ We are so thankful for every contribution, which makes sure we can deliver top-n
 - [ ] Grant the financial team the IAM role of Billing Account User on the billing account linked to your credit card.
 - [ ] Set up BigQuery billing export and grant your financial department IAM access to query the data.
 - [ ] Create a ticket with Google Billing Support to ask them to send the invoice to your company.
-- [ ] Change the billing account of your projects to the billing account of your company.
+- [x] Change the billing account of your projects to the billing account of your company.
 
 **[⬆ Back to Top](#table-of-contents)**
 
