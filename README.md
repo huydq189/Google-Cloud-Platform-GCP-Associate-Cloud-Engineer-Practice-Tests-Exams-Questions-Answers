@@ -1825,14 +1825,14 @@ We are so thankful for every contribution, which makes sure we can deliver top-n
 - [ ] Create a Service Account in your own project, and grant this Service Account access to BigQuery in your project.
 - [ ] Create a Service Account in your own project, and ask the partner to grant this Service Account access to BigQuery in their project.
 - [ ] Ask the partner to create a Service Account in their project, and have them give the Service Account access to BigQuery in their project.
-- [ ] Ask the partner to create a Service Account in their project, and grant their Service Account access to the BigQuery dataset in your project.
+- [x] Ask the partner to create a Service Account in their project, and grant their Service Account access to the BigQuery dataset in your project.
 
 **[⬆ Back to Top](#table-of-contents)**
 
 ### Your web application has been running successfully on Cloud Run for Anthos. You want to evaluate an updated version of the application with a specific percentage of your production users (canary deployment). What should you do?
 
 - [ ] Create a new service with the new version of the application. Split traffic between this version and the version that is currently running.
-- [ ] Create a new revision with the new version of the application. Split traffic between this version and the version that is currently running.
+- [x] Create a new revision with the new version of the application. Split traffic between this version and the version that is currently running.
 - [ ] Create a new service with the new version of the application. Add HTTP Load Balancer in front of both services.
 - [ ] Create a new revision with the new version of the application. Add HTTP Load Balancer in front of both revisions.
 
@@ -1843,7 +1843,7 @@ We are so thankful for every contribution, which makes sure we can deliver top-n
 - [ ] Configure an SSL Proxy load balancer in front of the application servers.
 - [ ] Configure an Internal UDP load balancer in front of the application servers.
 - [ ] Configure an External HTTP(s) load balancer in front of the application servers.
-- [ ] Configure an External Network load balancer in front of the application servers.
+- [x] Configure an External Network load balancer in front of the application servers.
 
 **[⬆ Back to Top](#table-of-contents)**
 
@@ -1851,7 +1851,7 @@ We are so thankful for every contribution, which makes sure we can deliver top-n
 
 - [ ] Create a Pub/Sub topic, and enable a Cloud Storage trigger for the Pub/Sub topic. Create an application that sends all medical images to the Pub/Sub topic.
 - [ ] Deploy a Dataflow job from the batch template, Datastore to Cloud Storage. Schedule the batch job on the desired interval.
-- [ ] Create a script that uses the gsutil command line interface to synchronize the on-premises storage with Cloud Storage. Schedule the script as a cron job.
+- [x] Create a script that uses the gsutil command line interface to synchronize the on-premises storage with Cloud Storage. Schedule the script as a cron job.
 - [ ] In the Cloud Console, go to Cloud Storage. Upload the relevant images to the appropriate bucket.
 
 **[⬆ Back to Top](#table-of-contents)**
