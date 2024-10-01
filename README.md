@@ -1858,7 +1858,7 @@ We are so thankful for every contribution, which makes sure we can deliver top-n
 
 ### Your auditor wants to view your organization's use of data in Google Cloud. The auditor is most interested in auditing who accessed data in Cloud Storage buckets. You need to help the auditor access the data they need. What should you do?
 
-- [ ] Turn on Data Access Logs for the buckets they want to audit, and then build a query in the log viewer that filters on Cloud Storage.
+- [x] Turn on Data Access Logs for the buckets they want to audit, and then build a query in the log viewer that filters on Cloud Storage.
 - [ ] Assign the appropriate permissions, and then create a Data Studio report on Admin Activity Audit Logs.
 - [ ] Assign the appropriate permissions, and the use Cloud Monitoring to review metrics.
 - [ ] Use the export logs API to provide the Admin Activity Audit Logs in the format they want.
@@ -1868,7 +1868,7 @@ We are so thankful for every contribution, which makes sure we can deliver top-n
 ### You received a JSON file that contained a private key of a Service Account in order to get access to several resources in a Google Cloud project. You downloaded and installed the Cloud SDK and want to use this private key for authentication and authorization when performing gcloud commands. What should you do?
 
 - [ ] Use the command gcloud auth login and point it to the private key.
-- [ ] Use the command gcloud auth activate-service-account and point it to the private key.
+- [x] Use the command gcloud auth activate-service-account and point it to the private key.
 - [ ] Place the private key file in the installation directory of the Cloud SDK and rename it to credentials.json.
 - [ ] Place the private key file in your home directory and rename it to GOOGLE_APPLICATION_CREDENTIALS.
 
@@ -1876,7 +1876,7 @@ We are so thankful for every contribution, which makes sure we can deliver top-n
 
 ### You are working with a Cloud SQL MySQL database at your company. You need to retain a month-end copy of the database for three years for audit purposes. What should you do?
 
-- [ ] Set up an export job for the first of the month. Write the export file to an Archive class Cloud Storage bucket.
+- [x] Set up an export job for the first of the month. Write the export file to an Archive class Cloud Storage bucket.
 - [ ] Save the automatic first-of-the-month backup for three years. Store the backup file in an Archive class Cloud Storage bucket.
 - [ ] Set up an on-demand backup for the first of the month. Write the backup to an Archive class Cloud Storage bucket.
 - [ ] Convert the automatic first-of-the-month backup to an export file. Write the export file to a Coldline class Cloud Storage bucket.
@@ -1887,7 +1887,7 @@ We are so thankful for every contribution, which makes sure we can deliver top-n
 
 - [ ] In the Log Viewer, filter the logs on severity ˜Error' and the name of the Service Account.
 - [ ] Create a sink to BigQuery to export all the logs. Create a Data Studio dashboard on the exported logs.
-- [ ] Create a custom log-based metric for the specific error to be used in an Alerting Policy.
+- [x] Create a custom log-based metric for the specific error to be used in an Alerting Policy.
 - [ ] Grant Project Owner access to the Service Account.
 
 **[⬆ Back to Top](#table-of-contents)**
@@ -1896,7 +1896,7 @@ We are so thankful for every contribution, which makes sure we can deliver top-n
 
 - [ ] Use Cloud Bigtable for data storage.
 - [ ] Use Cloud SQL for data storage.
-- [ ] Use Cloud Spanner for data storage.
+- [x] Use Cloud Spanner for data storage.
 - [ ] Use Firestore for data storage.
 
 **[⬆ Back to Top](#table-of-contents)**
@@ -1906,7 +1906,7 @@ We are so thankful for every contribution, which makes sure we can deliver top-n
 - [ ] Provision preemptible Compute Engine instances.
 - [ ] Provision Compute Engine instances with GPUs attached.
 - [ ] Provision Compute Engine instances with local SSDs attached.
-- [ ] Provision Compute Engine instances with M1 machine type.
+- [x] Provision Compute Engine instances with M1 machine type.
 
 **[⬆ Back to Top](#table-of-contents)**
 
@@ -1915,13 +1915,13 @@ We are so thankful for every contribution, which makes sure we can deliver top-n
 - [ ] Create and deploy a Custom Resource Definition per microservice.
 - [ ] Create and deploy a Docker Compose File.
 - [ ] Create and deploy a Job per microservice.
-- [ ] Create and deploy a Deployment per microservice.
+- [x] Create and deploy a Deployment per microservice.
 
 **[⬆ Back to Top](#table-of-contents)**
 
 ### You will have several applications running on different Compute Engine instances in the same project. You want to specify at a more granular level the service account each instance uses when calling Google Cloud APIs. What should you do?
 
-- [ ] When creating the instances, specify a Service Account for each instance.
+- [x] When creating the instances, specify a Service Account for each instance.
 - [ ] When creating the instances, assign the name of each Service Account as instance metadata.
 - [ ] After starting the instances, use gcloud compute instances update to specify a Service Account for each instance.
 - [ ] After starting the instances, use gcloud compute instances update to assign the name of the relevant Service Account as instance metadata.
@@ -1931,7 +1931,7 @@ We are so thankful for every contribution, which makes sure we can deliver top-n
 ### You are creating an application that will run on Google Kubernetes Engine. You have identified MongoDB as the most suitable database system for your application and want to deploy a managed MongoDB environment that provides a support SLA. What should you do?
 
 - [ ] Create a Cloud Bigtable cluster, and use the HBase API.
-- [ ] Deploy MongoDB Atlas from the Google Cloud Marketplace.
+- [x] Deploy MongoDB Atlas from the Google Cloud Marketplace.
 - [ ] Download a MongoDB installation package, and run it on Compute Engine instances.
 - [ ] Download a MongoDB installation package, and run it on a Managed Instance Group.
 
@@ -1942,13 +1942,13 @@ We are so thankful for every contribution, which makes sure we can deliver top-n
 - [ ] Create a Data Studio dashboard that uses the related BigQuery tables as a source and give the BI team view access to the Data Studio dashboard.
 - [ ] Create a Service Account for the BI team and distribute a new private key to each member of the BI team.
 - [ ] Use Cloud Scheduler to schedule a batch Dataflow job to copy the data from BigQuery to the BI team's internal data warehouse.
-- [ ] Assign the IAM role of BigQuery User to a Google Group that contains the members of the BI team.
+- [x] Assign the IAM role of BigQuery User to a Google Group that contains the members of the BI team.
 
 **[⬆ Back to Top](#table-of-contents)**
 
 ### Your company is moving its entire workload to Compute Engine. Some servers should be accessible through the Internet, and other servers should only be accessible over the internal network. All servers need to be able to talk to each other over specific ports and protocols. The current on-premises network relies on a demilitarized zone (DMZ) for the public servers and a Local Area Network (LAN) for the private servers. You need to design the networking infrastructure on Google Cloud to match these requirements. What should you do?
 
-- [ ] 1. Create a single VPC with a subnet for the DMZ and a subnet for the LAN. 2. Set up firewall rules to open up relevant traffic between the DMZ and the LAN subnets, and another firewall rule to allow public ingress traffic for the DMZ.
+- [x] 1. Create a single VPC with a subnet for the DMZ and a subnet for the LAN. 2. Set up firewall rules to open up relevant traffic between the DMZ and the LAN subnets, and another firewall rule to allow public ingress traffic for the DMZ.
 - [ ] 1. Create a single VPC with a subnet for the DMZ and a subnet for the LAN. 2. Set up firewall rules to open up relevant traffic between the DMZ and the LAN subnets, and another firewall rule to allow public egress traffic for the DMZ.
 - [ ] 1. Create a VPC with a subnet for the DMZ and another VPC with a subnet for the LAN. 2. Set up firewall rules to open up relevant traffic between the DMZ and the LAN subnets, and another firewall rule to allow public ingress traffic for the DMZ.
 - [ ] 1. Create a VPC with a subnet for the DMZ and another VPC with a subnet for the LAN. 2. Set up firewall rules to open up relevant traffic between the DMZ and the LAN subnets, and another firewall rule to allow public egress traffic for the DMZ.
